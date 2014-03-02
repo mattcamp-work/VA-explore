@@ -1,0 +1,3274 @@
+/* == this is the new, refactored css === */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, ../scss/global-settings/_01-reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../scss/global-settings/_01-reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 31, ../scss/global-settings/_01-reset.scss */
+body {
+  line-height: 1; }
+
+/* line 34, ../scss/global-settings/_01-reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 38, ../scss/global-settings/_01-reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 42, ../scss/global-settings/_01-reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 46, ../scss/global-settings/_01-reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 51, ../scss/global-settings/_01-reset.scss */
+.meyer-reset, .reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* === end meyer reset ==== */
+/* line 273, ../scss/global-settings/_03-foundation-mixins.scss */
+meta.foundation-mq-small {
+  font-family: "only screen and (min-width: 768px)";
+  width: 768px; }
+
+/* line 278, ../scss/global-settings/_03-foundation-mixins.scss */
+meta.foundation-mq-medium {
+  font-family: "only screen and (min-width:1280px)";
+  width: 1280px; }
+
+/* line 283, ../scss/global-settings/_03-foundation-mixins.scss */
+meta.foundation-mq-large {
+  font-family: "only screen and (min-width:1440px)";
+  width: 1440px; }
+
+/* line 316, ../scss/global-settings/_03-foundation-mixins.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 321, ../scss/global-settings/_03-foundation-mixins.scss */
+html,
+body {
+  font-size: 100%; }
+
+/* line 339, ../scss/global-settings/_03-foundation-mixins.scss */
+a:hover {
+  cursor: pointer; }
+
+/* line 344, ../scss/global-settings/_03-foundation-mixins.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto; }
+
+/* line 347, ../scss/global-settings/_03-foundation-mixins.scss */
+object,
+embed {
+  height: 100%; }
+
+/* line 348, ../scss/global-settings/_03-foundation-mixins.scss */
+img {
+  -ms-interpolation-mode: bicubic; }
+
+/* line 354, ../scss/global-settings/_03-foundation-mixins.scss */
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object {
+  max-width: none !important; }
+
+/* line 359, ../scss/global-settings/_03-foundation-mixins.scss */
+.left {
+  float: left !important; }
+
+/* line 360, ../scss/global-settings/_03-foundation-mixins.scss */
+.right {
+  float: right !important; }
+
+/* line 361, ../scss/global-settings/_03-foundation-mixins.scss */
+.text-left {
+  text-align: left !important; }
+
+/* line 362, ../scss/global-settings/_03-foundation-mixins.scss */
+.text-right {
+  text-align: right !important; }
+
+/* line 363, ../scss/global-settings/_03-foundation-mixins.scss */
+.text-center {
+  text-align: center !important; }
+
+/* line 364, ../scss/global-settings/_03-foundation-mixins.scss */
+.text-justify {
+  text-align: justify !important; }
+
+/* line 365, ../scss/global-settings/_03-foundation-mixins.scss */
+.hide {
+  display: none; }
+
+/* line 371, ../scss/global-settings/_03-foundation-mixins.scss */
+.antialiased {
+  -webkit-font-smoothing: antialiased; }
+
+/* line 374, ../scss/global-settings/_03-foundation-mixins.scss */
+img {
+  display: inline-block;
+  vertical-align: middle; }
+
+/* line 384, ../scss/global-settings/_03-foundation-mixins.scss */
+textarea {
+  height: auto;
+  min-height: 50px; }
+
+/* line 387, ../scss/global-settings/_03-foundation-mixins.scss */
+select {
+  width: 100%; }
+
+/* === settings ==== */
+/* line 32, ../scss/global-settings/_05-settings.scss */
+body {
+  background-color: #f7f9f4 !important;
+  font-size: 16px; }
+
+/* line 3, ../scss/global-settings/_02-grid.scss */
+.row {
+  width: 100%;
+  float: left;
+  clear: both;
+  position: relative; }
+
+/* line 14, ../scss/global-settings/_02-grid.scss */
+.main {
+  max-width: 67.5em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden; }
+
+/* ==== GRID - ie7 compatible ======== */
+/* line 49, ../scss/global-settings/_02-grid.scss */
+.full-width, .row-banner .intro, .content-box.application-process, body.benefit-page ul.apply-block, body.benefit-page .row-content ul.requirements li, body.benefit-page .row-content .application-process, .apply-secondary, body.share-portal .share-grid, body.video-page .video-nav-bar, ul.videos {
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  *margin-right: 1.7%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative; }
+  /* line 51, ../scss/global-settings/_02-grid.scss */
+  .full-width.alpha, .row-banner .alpha.intro, .alpha.content-box.application-process, body.benefit-page ul.alpha.apply-block, body.benefit-page .row-content ul.requirements li.alpha, body.benefit-page .row-content .alpha.application-process, .alpha.apply-secondary, body.share-portal .alpha.share-grid, body.video-page .alpha.video-nav-bar, ul.alpha.videos {
+    margin-left: 0;
+    margin-right: 4%; }
+
+/* line 57, ../scss/global-settings/_02-grid.scss */
+.half-width, body.share-portal .share-grid ul.share-content.share-text > li {
+  width: 46%;
+  margin-left: 2%;
+  margin-right: 2%;
+  *margin-right: 1.7%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative; }
+  /* line 59, ../scss/global-settings/_02-grid.scss */
+  .half-width.alpha, body.share-portal .share-grid ul.share-content.share-text > li.alpha, .half-width.left, body.share-portal .share-grid ul.share-content.share-text > li.left, .half-width.right, body.share-portal .share-grid ul.share-content.share-text > li.right {
+    margin-left: 0;
+    margin-right: 4%; }
+  /* line 63, ../scss/global-settings/_02-grid.scss */
+  .half-width.right, body.share-portal .share-grid ul.share-content.share-text > li.right {
+    float: right; }
+
+/* line 69, ../scss/global-settings/_02-grid.scss */
+.twoThirds-width {
+  width: 62.666%;
+  margin-left: 2%;
+  margin-right: 2%;
+  *margin-right: 1.7%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative; }
+  /* line 71, ../scss/global-settings/_02-grid.scss */
+  .twoThirds-width.alpha {
+    margin-left: 0;
+    margin-right: 4%; }
+
+/* line 77, ../scss/global-settings/_02-grid.scss */
+.oneThird-width {
+  width: 29.333%;
+  margin-left: 2%;
+  margin-right: 2%;
+  *margin-right: 1.7%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative; }
+
+/* line 82, ../scss/global-settings/_02-grid.scss */
+.quarter-width, #footer ul.footer-links, .row-footer ul.footer-links, body.share-portal .share-grid ul.share-content > li, body.share-portal .share-grid ul.document-gallery li {
+  width: 21%;
+  margin-left: 2%;
+  margin-right: 2%;
+  *margin-right: 1.7%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative; }
+
+/* line 87, ../scss/global-settings/_02-grid.scss */
+.threeQuarters-width {
+  width: 71%;
+  margin-left: 2%;
+  margin-right: 2%;
+  *margin-right: 1.7%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative; }
+
+/* line 91, ../scss/global-settings/_02-grid.scss */
+.ad-column-20 {
+  width: 19%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  *margin-right: 0.425%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative; }
+
+/* line 95, ../scss/global-settings/_02-grid.scss */
+.ad-column-30 {
+  width: 29%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  *margin-right: 0.425%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative; }
+
+/* line 99, ../scss/global-settings/_02-grid.scss */
+.ad-column-50 {
+  width: 49%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  *margin-right: 0.425%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative; }
+
+/* line 105, ../scss/global-settings/_02-grid.scss */
+.col-1, .col-2 {
+  width: 46%;
+  margin-left: 2%;
+  margin-right: 2%;
+  *margin-right: 1.7%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative; }
+
+/* line 109, ../scss/global-settings/_02-grid.scss */
+.col-1 {
+  margin-left: 0;
+  margin-right: 4%; }
+
+/* line 114, ../scss/global-settings/_02-grid.scss */
+.col-main {
+  width: 61%;
+  margin-left: 2%;
+  margin-right: 2%;
+  *margin-right: 1.7%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative; }
+
+/* line 118, ../scss/global-settings/_02-grid.scss */
+.col-sidebar {
+  width: 31%;
+  margin-left: 2%;
+  margin-right: 2%;
+  *margin-right: 1.7%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative;
+  overflow: hidden; }
+
+/* ==== gutter div ==== */
+/* line 130, ../scss/global-settings/_02-grid.scss */
+.gutter, .row-banner .explore-nav .va-explore-megamenu .menu-panel .wrapper {
+  position: relative;
+  padding: 20px;
+  float: left;
+  width: 100%;
+  zoom: 1;
+  *float: inherit; }
+
+/* ==== clearing ==== */
+/* line 143, ../scss/global-settings/_02-grid.scss */
+.clear-me {
+  overflow: auto;
+  width: 100%;
+  *zoom: 1;
+  *height: 1%; }
+
+/* line 150, ../scss/global-settings/_02-grid.scss */
+hr.clear-me {
+  visibility: hidden; }
+
+/* line 33, ../scss/global-settings/_06-typography.scss */
+h1, h2, h3, h4, h5, h6, p, li, a {
+  font-family: "myriad-pro-n3","myriad-pro",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #52555f;
+  -webkit-font-smoothing: subpixel-antialiased;
+  word-wrap: break-word;
+  /* or "normal" */
+  overflow-wrap: break-word; }
+
+/* line 44, ../scss/global-settings/_06-typography.scss */
+a:link, a:active, a:visited, a:hover {
+  text-decoration: none; }
+/* line 48, ../scss/global-settings/_06-typography.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 55, ../scss/global-settings/_06-typography.scss */
+blockquote {
+  margin-left: 0;
+  padding: 0;
+  position: relative;
+  font-family: georgia;
+  	/*
+  	&:before {
+  		position: absolute;
+  		content:'\201c';
+  		color: $color-va-med-grey;
+  		font-size: 300%;
+  
+  		//position: 
+  	}
+  	&:after {
+  		position: absolute;
+  		content:'\201d';
+  		color: $color-va-med-grey;
+  	}
+  
+  	*/ }
+  /* line 62, ../scss/global-settings/_06-typography.scss */
+  blockquote h6 {
+    font-family: georgia;
+    color: #1981b8; }
+  /* line 68, ../scss/global-settings/_06-typography.scss */
+  blockquote p {
+    font-family: georgia;
+    font-style: italic;
+    color: #1981b8;
+    width: 100%; }
+
+/* line 98, ../scss/global-settings/_06-typography.scss */
+h1, h2, h3, h4, h5, h6, p {
+  /*float:left;
+  width: 100%;
+  *float: none;
+  *width: auto;
+  &:after{
+  	content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+  }*/
+  text-rendering: optimizelegibility; }
+
+/* line 116, ../scss/global-settings/_06-typography.scss */
+h1 {
+  font-size: 3.75em;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -1.5px; }
+
+/* line 122, ../scss/global-settings/_06-typography.scss */
+h2 {
+  font-size: 2.625em; }
+
+/* line 126, ../scss/global-settings/_06-typography.scss */
+h3 {
+  font-size: 1.875em; }
+
+/* line 130, ../scss/global-settings/_06-typography.scss */
+h4 {
+  font-size: 1.625em; }
+
+/* line 134, ../scss/global-settings/_06-typography.scss */
+h5 {
+  font-size: 1.1875em;
+  margin-bottom: 16.66667px; }
+
+/* line 139, ../scss/global-settings/_06-typography.scss */
+h6 {
+  font-size: 1.09375em;
+  margin-top: 15.35088px; }
+
+/* line 144, ../scss/global-settings/_06-typography.scss */
+p {
+  font-size: 1.03125em;
+  line-height: 1.625em;
+  max-width: 850px; }
+
+/* line 155, ../scss/global-settings/_06-typography.scss */
+.row.row-banner .intro h3, .row.row-banner .intro h4, .row.row-banner .intro h5, .row.row-banner .intro h6 {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+/* line 166, ../scss/global-settings/_06-typography.scss */
+.row.row-content h1, .row.row-content h2, .row.row-content h3, .row.row-content h4, .row.row-content h5, .row.row-content h6 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  float: left;
+  line-height: 1.3em; }
+/* line 174, ../scss/global-settings/_06-typography.scss */
+.row.row-content p {
+  line-height: 1.625em; }
+  /* line 177, ../scss/global-settings/_06-typography.scss */
+  .row.row-content p a {
+    text-decoration: underline;
+    color: black; }
+/* line 183, ../scss/global-settings/_06-typography.scss */
+.row.row-content ol.numbered-list {
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-left: 1em;
+  margin-bottom: 1em; }
+  /* line 189, ../scss/global-settings/_06-typography.scss */
+  .row.row-content ol.numbered-list li {
+    margin-bottom: .5em; }
+    /* line 192, ../scss/global-settings/_06-typography.scss */
+    .row.row-content ol.numbered-list li a {
+      text-decoration: underline; }
+/* line 201, ../scss/global-settings/_06-typography.scss */
+.row.row-content ul.bullet-list {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-bottom: 1em;
+  margin-left: 1em; }
+  /* line 207, ../scss/global-settings/_06-typography.scss */
+  .row.row-content ul.bullet-list li {
+    margin-bottom: .5em;
+    display: list-item; }
+    /* line 211, ../scss/global-settings/_06-typography.scss */
+    .row.row-content ul.bullet-list li a {
+      text-decoration: underline; }
+
+/* line 225, ../scss/global-settings/_06-typography.scss */
+b, strong {
+  font-family: "myriad-pro-n4","myriad-pro",sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+/* line 229, ../scss/global-settings/_06-typography.scss */
+.small-text {
+  font-size: 0.84375em;
+  color: #6a6d7a;
+  line-height: 1.125em;
+  margin-top: 7px;
+  margin-left: 5px; }
+
+/* === BEGIN @top-bar  ====== */
+/* line 4, ../scss/global-modules/_top-bar.scss */
+a.branding.va-logo {
+  background: url(../images/logo-va.png) 0 center no-repeat;
+  width: 149px;
+  display: block;
+  text-indent: -9999px; }
+
+/* line 12, ../scss/global-modules/_top-bar.scss */
+.row-top-bar {
+  background: #002e4c url(../images/shadow-va-meganav.png) center 55px repeat-x;
+  position: relative; }
+  /* line 17, ../scss/global-modules/_top-bar.scss */
+  .row-top-bar ul.nav-top-bar a {
+    line-height: 58px; }
+    /* line 19, ../scss/global-modules/_top-bar.scss */
+    .row-top-bar ul.nav-top-bar a:link, .row-top-bar ul.nav-top-bar a:active, .row-top-bar ul.nav-top-bar a:visited, .row-top-bar ul.nav-top-bar a:hover, .row-top-bar ul.nav-top-bar a {
+      color: #bfcad2; }
+    /* line 22, ../scss/global-modules/_top-bar.scss */
+    .row-top-bar ul.nav-top-bar a:hover {
+      color: white; }
+    /* line 25, ../scss/global-modules/_top-bar.scss */
+    .row-top-bar ul.nav-top-bar a.va-menu-trigger:hover {
+      text-decoration: none; }
+  /* line 31, ../scss/global-modules/_top-bar.scss */
+  .row-top-bar ul.nav-top-bar li.nav-item {
+    margin-right: 15px; }
+  /* line 41, ../scss/global-modules/_top-bar.scss */
+  .row-top-bar ul.nav-va {
+    width: auto;
+    max-width: 650px;
+    overflow: hidden;
+    margin-right: 140px; }
+    /* line 51, ../scss/global-modules/_top-bar.scss */
+    .row-top-bar ul.nav-va li.nav-item {
+      float: left;
+      display: block; }
+    /* line 55, ../scss/global-modules/_top-bar.scss */
+    .row-top-bar ul.nav-va li.nav-va-search {
+      max-width: 100%;
+      float: none;
+      padding-top: 10px;
+      overflow: hidden; }
+  /* line 68, ../scss/global-modules/_top-bar.scss */
+  .row-top-bar ul.nav-user {
+    float: right;
+    overflow: hidden; }
+    /* line 72, ../scss/global-modules/_top-bar.scss */
+    .row-top-bar ul.nav-user li {
+      display: inline-block;
+      *display: inline;
+      *vertical-align: auto;
+      *zoom: 1; }
+
+/* line 90, ../scss/global-modules/_top-bar.scss */
+.main {
+  overflow: visible; }
+
+/* line 109, ../scss/global-modules/_top-bar.scss */
+input[type='text'].va-search {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 1.3em;
+  font-size: 16px;
+  line-height: 30px;
+  display: inline-block;
+  border: none;
+  background: #19425d url(../images/sprite-searchGlass.png) 98% -95px no-repeat;
+  color: #a8b7c2;
+  transition: background-color .15s linear;
+  border: 1px solid #002e4c;
+  border-color: transparent #264d66 #264d66 transparent; }
+  /* line 126, ../scss/global-modules/_top-bar.scss */
+  input[type='text'].va-search:focus {
+    background-color: #e5eaed;
+    color: #0c3854;
+    background-position: 98% -195px; }
+
+/* === end @top-bar  ====== */
+/* begin _nav-va.scss */
+/* line 17, ../scss/global-modules/_nav-va.scss */
+.va-mega-menu {
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0, 0, 0.48, 1);
+  -moz-transition: max-height 0.3s cubic-bezier(0, 0, 0.48, 1);
+  -ms-transition: max-height 0.3s cubic-bezier(0, 0, 0.48, 1);
+  -o-transition: max-height 0.3s cubic-bezier(0, 0, 0.48, 1);
+  transition: max-height 0.3s cubic-bezier(0, 0, 0.48, 1);
+  /* End The Clear Fixes & Misc Styles*/
+  /* === mc background hack ===== */
+  /* === end mc background hack ===== */ }
+  /* line 23, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu.show-nav {
+    max-height: 50px; }
+  /* line 28, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #topnav #hdr-flag, .va-mega-menu #topnav #nav-home {
+    display: none; }
+  /* line 34, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .mc_extend_1, .va-mega-menu #topnav li, .va-mega-menu #topnav li.first-level a {
+    display: block;
+    min-height: 52px;
+    color: #e6eaed;
+    text-decoration: none; }
+  /* line 41, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .mc_extend_2, .va-mega-menu a:link a:visited, .va-mega-menu #topnav li.first-level span.highlight {
+    color: #e6eaed;
+    text-decoration: none; }
+  /* line 48, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .element-hidden {
+    left: -9999px;
+    position: absolute;
+    z-index: 10; }
+  /* line 50, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .element-viisble {
+    left: auto; }
+  /* line 52, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .clear {
+    clear: both; }
+  /* line 54, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden; }
+  /* line 56, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .clearfix {
+    display: inline-block; }
+  /* line 58, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu html[xmlns] .clearfix {
+    display: block; }
+  /* line 60, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu * .clearfix {
+    height: 1%; }
+  /* line 62, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu * {
+    margin: 0;
+    padding: 0; }
+  /* line 66, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu h2.page-title {
+    margin-top: -7px; }
+  /* line 69, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .bg-1 {
+    background-color: red; }
+  /* line 72, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .bg-2 {
+    background-color: orange; }
+  /* line 75, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .bg-3 {
+    background-color: yellow; }
+  /* line 78, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .bg-4 {
+    background-color: green; }
+  /* line 81, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .bg-5 {
+    background-color: blue; }
+  /* line 86, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu h4 {
+    font-size: 0.9375em;
+    font-family: "myriad-pro-n4","myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400; }
+  /* line 91, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu a {
+    font-size: 0.875em; }
+    /* line 95, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu a:link, .va-mega-menu a:active, .va-mega-menu a:hover, .va-mega-menu a:visited {
+      color: #e6eaed; }
+  /* line 103, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul div {
+    background-color: #073659; }
+    /* line 105, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu ul div div {
+      background-color: transparent; }
+  /* line 115, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul.secondary-nav li {
+    list-style-type: none;
+    color: blue;
+    display: inline; }
+    /* line 121, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu ul.secondary-nav li a {
+      list-style-type: none;
+      color: blue;
+      display: inline; }
+  /* line 128, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul.secondary-nav a:hover {
+    color: blue; }
+  /* line 135, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul .topnav-dd-outer {
+    margin-top: -5px; }
+  /* line 141, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-issues div.topnav-dd-outer-three-col {
+    margin-left: -299px; }
+  /* line 145, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-issues div.topnav-dd-outer-featured {
+    margin-left: -299px; }
+  /* line 149, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-issues div.topnav-dd-outer-three-col-featured {
+    margin-left: -299px; }
+  /* line 155, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-briefing-room div.topnav-dd-outer-three-col-featured {
+    margin-left: -243px; }
+  /* line 161, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-the-admin div.topnav-dd-outer {
+    margin-left: -198px; }
+  /* line 164, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-the-admin div.topnav-dd-outer-featured {
+    margin-left: -197px; }
+  /* line 167, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-the-admin div.topnav-dd-outer-three-col-featured {
+    margin-left: -420px; }
+  /* line 170, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-the-admin div.topnav-dd-inner {
+    margin-right: 9px; }
+  /* line 176, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-the-wh div.topnav-dd-outer {
+    margin-left: -132px; }
+  /* line 179, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-the-wh div.topnav-dd-outer-featured {
+    margin-left: -7px; }
+  /* line 182, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-the-wh div.topnav-dd-outer-three-col {
+    margin-left: -322px; }
+  /* line 185, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-the-wh div.topnav-dd-outer-three-col-featured {
+    margin-left: -547px; }
+  /* line 188, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-the-wh div.topnav-dd-inner {
+    margin-right: 9px; }
+  /* line 194, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-the-gov div.topnav-dd-outer {
+    margin-left: -68px; }
+  /* line 197, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-the-gov div.topnav-dd-outer-featured {
+    margin-left: -496px; }
+  /* line 200, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu ul #nav-the-gov div.topnav-dd-inner {
+    margin-right: 9px; }
+  /* line 206, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #hp-content-main {
+    height: 100%;
+    width: 960px;
+    float: left;
+    background-color: blue; }
+  /* line 212, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #hp-three-col {
+    height: 380px;
+    width: 960px;
+    float: left; }
+    /* line 219, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #hp-three-col .col {
+      width: 320px;
+      height: 383px;
+      float: left; }
+    /* line 225, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #hp-three-col .titles {
+      height: 57px;
+      width: 300px;
+      margin: 33px 0 0 20px;
+      float: left; }
+      /* line 230, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #hp-three-col .titles h1 {
+        color: white;
+        margin: 10px 0 0 0;
+        /* (4) color was set before: old value: $color-1 - new value $color-1 */
+        /* (5) //mcfont  font was set before: old value: 25px Georgia,"Times New Roman",Times,serif - new value 25px Georgia, "Times New Roman", Times, serif */
+        /* (6) margin was set before: old value: 10px 0 0 3px - new value 10px 0 0 0 */ }
+        /* line 237, ../scss/global-modules/_nav-va.scss */
+        .va-mega-menu #hp-three-col .titles h1 a {
+          color: white;
+          text-decoration: none; }
+    /* line 243, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #hp-three-col .icons {
+      height: 57px;
+      width: 49px;
+      float: left; }
+    /* line 248, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #hp-three-col p {
+      color: purple;
+      margin: 0 10px 10px 30px; }
+    /* line 253, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #hp-three-col ul.custom li {
+      height: 22px;
+      width: 270px;
+      float: left;
+      color: white; }
+      /* line 259, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #hp-three-col ul.custom li a:hover {
+        text-decoration: underline; }
+    /* line 264, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #hp-three-col .bullet a {
+      color: white; }
+  /* line 268, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .three-col-content {
+    float: left;
+    height: 100px;
+    width: 320px;
+    /* (1) float was set before: old value: left - new value left */
+    /* (2) height was set before: old value: 120px - new value 100px */
+    /* (3) width was set before: old value: 320px - new value 320px */ }
+  /* line 278, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu a:visited {
+    color: white; }
+  /* line 282, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu a:link a:visited {
+    color: white;
+    text-decoration: none; }
+  /* line 289, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .hp-button-wrapper {
+    height: 30px;
+    width: 250px;
+    margin: 10px 0 0 25px; }
+  /* line 294, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .button-getting-started {
+    float: left;
+    height: 34px;
+    width: 129px;
+    margin-top: 10px; }
+    /* line 300, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu .button-getting-started .text a {
+      color: purple;
+      text-decoration: none;
+      height: 15px;
+      width: 129px;
+      text-align: center;
+      float: left;
+      margin-top: 10px; }
+  /* line 311, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .hp-icons {
+    height: 49px;
+    width: 57px;
+    float: left; }
+  /* line 316, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #swoosh {
+    position: relative;
+    z-index: 8;
+    float: left;
+    height: 56px;
+    width: 740px;
+    margin-top: -27px; }
+  /* line 325, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #hdr-emblem {
+    float: left;
+    height: 62px;
+    margin: 10px 0 0;
+    width: 116px; }
+    /* line 330, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #hdr-emblem img {
+      height: 60px;
+      width: 120px; }
+  /* line 335, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #hdr-links {
+    float: right;
+    height: 23px;
+    margin: 33px 8px 0 0;
+    padding: 15px 0 0;
+    text-align: right;
+    width: 270px; }
+    /* line 342, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #hdr-links a {
+      padding: 0 10px; }
+      /* line 344, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #hdr-links a:hover {
+        text-decoration: underline; }
+    /* line 348, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #hdr-links ul {
+      margin: 0;
+      padding: 0; }
+    /* line 352, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #hdr-links li {
+      display: inline;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      /* line 357, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #hdr-links li.line {
+        border-left: 1px solid #e6eaed; }
+  /* line 362, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #hdr-flag {
+    float: left;
+    height: 24px;
+    width: 25px;
+    margin: 18px 0 0 11px;
+    padding: 0;
+    text-indent: -9000px; }
+    /* line 369, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #hdr-flag a {
+      background-position: -68px -69px;
+      display: block;
+      width: 25px;
+      height: 24px; }
+  /* line 377, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #top-nav-wrapper {
+    width: 960px; }
+  /* line 380, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #topnav {
+    height: 52px;
+    width: 960px;
+    margin: auto;
+    float: left;
+    padding: 0; }
+    /* line 389, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #topnav li {
+      margin-top: 0;
+      float: left;
+      list-style: none outside none;
+      padding: 0; }
+      /* line 400, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #topnav li.first-level span {
+        margin-top: 0;
+        margin-left: -2px;
+        margin-right: auto;
+        display: block; }
+        /* line 409, ../scss/global-modules/_nav-va.scss */
+        .va-mega-menu #topnav li.first-level span.text {
+          float: left;
+          margin-top: 20px;
+          background: none;
+          display: block;
+          width: 130px;
+          text-align: center;
+          color: white;
+          text-decoration: none; }
+        /* line 419, ../scss/global-modules/_nav-va.scss */
+        .va-mega-menu #topnav li.first-level span.highlight {
+          float: left;
+          margin-top: 20px;
+          background: none;
+          display: block;
+          width: 130px;
+          text-align: center;
+          position: relative; }
+      /* line 435, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #topnav li.first-level ul {
+        display: block;
+        float: left;
+        margin: 0 0 0 0;
+        padding: 20px 0 5px;
+        width: 195px; }
+        /* line 441, ../scss/global-modules/_nav-va.scss */
+        .va-mega-menu #topnav li.first-level ul li {
+          float: left;
+          margin: 0 0 13px;
+          min-height: 12px;
+          padding: 0;
+          width: 180px; }
+          /* line 447, ../scss/global-modules/_nav-va.scss */
+          .va-mega-menu #topnav li.first-level ul li a {
+            min-height: 12px;
+            text-decoration: none; }
+            /* line 452, ../scss/global-modules/_nav-va.scss */
+            .va-mega-menu #topnav li.first-level ul li a:hover {
+              text-decoration: underline; }
+        /* line 457, ../scss/global-modules/_nav-va.scss */
+        .va-mega-menu #topnav li.first-level ul.topnav-dd-inner-sub {
+          margin: 0 0 15px 0;
+          padding: 0; }
+          /* line 460, ../scss/global-modules/_nav-va.scss */
+          .va-mega-menu #topnav li.first-level ul.topnav-dd-inner-sub li {
+            margin: 7px 0 0 0; }
+            /* line 465, ../scss/global-modules/_nav-va.scss */
+            .va-mega-menu #topnav li.first-level ul.topnav-dd-inner-sub li span.text-italic {
+              background: none;
+              text-decoration: underline;
+              display: inline;
+              position: relative;
+              margin-top: -10px;
+              margin-left: 1px;
+              margin-right: 1px; }
+      /* line 490, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #topnav li div.topnav-dd-outer {
+        left: -999em;
+        margin-left: -9px;
+        position: absolute;
+        width: 426px;
+        z-index: 500; }
+      /* line 499, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #topnav li div.topnav-dd-outer-featured {
+        width: 651px; }
+      /* line 502, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #topnav li div.topnav-dd-outer-three-col {
+        width: 616px; }
+      /* line 505, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #topnav li div.topnav-dd-outer-three-col-featured {
+        width: 841px; }
+      /* line 510, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #topnav li:hover div.topnav-dd-outer {
+        left: auto; }
+    /* line 515, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #topnav #nav-the-admin-feature {
+      padding: 18px 40px 18px 10px; }
+    /* line 519, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #topnav #nav-the-wh-feature {
+      padding: 18px 40px 18px 10px; }
+    /* line 523, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #topnav #nav-the-gov-feature {
+      padding: 18px 40px 18px 10px; }
+    /* line 527, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #topnav div.topnav-feature {
+      color: purple;
+      float: left;
+      overflow: hidden;
+      padding: 18px 10px 18px 40px;
+      width: 185px; }
+      /* line 535, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #topnav div.topnav-feature a {
+        color: white;
+        min-height: 12px; }
+      /* line 539, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #topnav div.topnav-feature h3 {
+        line-height: 16px;
+        margin: 0 0 7px;
+        min-height: 12px;
+        padding: 0; }
+      /* line 547, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #topnav div.topnav-feature p {
+        line-height: 16px;
+        margin: 0 0 7px;
+        min-height: 12px;
+        padding: 0; }
+      /* line 554, ../scss/global-modules/_nav-va.scss */
+      .va-mega-menu #topnav div.topnav-feature hr {
+        margin: 10px 0; }
+  /* line 560, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #nav-home a.first-level {
+    width: 130px; }
+  /* line 570, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #nav-blog a.first-level {
+    width: 130px; }
+  /* line 580, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #nav-media-center a.first-level {
+    width: 130px; }
+  /* line 590, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #nav-briefing-room a.first-level {
+    width: 130px; }
+  /* line 600, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #nav-issues a.first-level {
+    width: 130px; }
+  /* line 609, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #nav-the-admin {
+    width: 130px; }
+    /* line 611, ../scss/global-modules/_nav-va.scss */
+    .va-mega-menu #nav-the-admin a.first-level {
+      width: 130px; }
+  /* line 621, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #nav-the-wh a.first-level {
+    width: 130px; }
+  /* line 631, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #nav-the-gov a.first-level {
+    width: 130px; }
+  /* line 640, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #issues-landing-entry-list {
+    float: left;
+    width: 142px; }
+  /* line 644, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu li.bullet {
+    list-style-type: none;
+    height: 13px;
+    margin-left: 25px;
+    padding-left: 25px; }
+  /* line 651, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .two-col h4 {
+    color: white;
+    letter-spacing: 0.05em;
+    margin: 3px 0 10px 0;
+    text-transform: uppercase; }
+  /* line 660, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .topnav-dd-inner-sub h4 {
+    color: white;
+    letter-spacing: 0.05em;
+    margin: 15px 0 10px 0;
+    text-transform: uppercase; }
+  /* line 669, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu .three-col h4 {
+    color: white;
+    letter-spacing: 0.05em;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    text-align: left; }
+  /* line 680, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu #issues-landing-links #issues-landing-entry-list li {
+    padding: 3px;
+    width: 139px; }
+  /* line 685, ../scss/global-modules/_nav-va.scss */
+  .va-mega-menu div.topnav-dd-inner {
+    margin-bottom: -5px;
+    margin-left: 17px;
+    padding: 0 0 17px; }
+
+/* === end _nav-va.scss === */
+/*==== settings =====*/
+/* === begin _nav-explore.scss === */
+/* line 27, ../scss/global-modules/_nav-explore.scss */
+.debug {
+  background-color: rgba(250, 200, 0, 0.3); }
+
+/* ==== Sticky Styles ==== */
+/* line 42, ../scss/global-modules/_nav-explore.scss */
+.row-banner .explore-nav {
+  background: url(../images/trans-10.png);
+  width: 100%;
+  height: 44px;
+  position: relative;
+  z-index: 101; }
+  /* line 50, ../scss/global-modules/_nav-explore.scss */
+  .row-banner .explore-nav a, .row-banner .explore-nav li:after {
+    color: white; }
+  /* line 54, ../scss/global-modules/_nav-explore.scss */
+  .row-banner .explore-nav p.menu-trigger {
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    color: white;
+    text-align: center;
+    z-index: 11;
+    z-index: 102;
+    font-family: "myriad-pro-n6","myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    padding: 0;
+    line-height: 1em;
+    margin-right: 10px;
+    margin-left: 5px; }
+  /* line 72, ../scss/global-modules/_nav-explore.scss */
+  .row-banner .explore-nav .main {
+    overflow: visible; }
+  /* line 76, ../scss/global-modules/_nav-explore.scss */
+  .row-banner .explore-nav p.menu-trigger, .row-banner .explore-nav ul.bread-crumbs {
+    margin-top: 12px; }
+  /* line 80, ../scss/global-modules/_nav-explore.scss */
+  .row-banner .explore-nav ul.bread-crumbs {
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    vertical-align: top;
+    min-width: 300px;
+    margin-left: 15px; }
+    /* line 89, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav ul.bread-crumbs li {
+      position: relative;
+      display: inline-block;
+      *display: inline;
+      *vertical-align: auto;
+      *zoom: 1;
+      margin-right: 10px;
+      margin-top: 0px; }
+      /* line 96, ../scss/global-modules/_nav-explore.scss */
+      .row-banner .explore-nav ul.bread-crumbs li a {
+        padding: 0;
+        display: inline-block;
+        *display: inline;
+        *vertical-align: auto;
+        *zoom: 1;
+        margin-left: 15px;
+        font-size: 16px; }
+      /* line 108, ../scss/global-modules/_nav-explore.scss */
+      .row-banner .explore-nav ul.bread-crumbs li:after {
+        content: "\203A";
+        font-size: 25px;
+        display: block;
+        position: absolute;
+        top: -7px;
+        left: 0; }
+  /* line 120, ../scss/global-modules/_nav-explore.scss */
+  .row-banner .explore-nav.sticky {
+    position: fixed; }
+  /* line 124, ../scss/global-modules/_nav-explore.scss */
+  .row-banner .explore-nav.sticky, body.generic-page .row-banner .explore-nav {
+    background-color: white;
+    border-bottom: 1px solid #daddda;
+    border: none;
+    *border-bottom: 2px solid #efc3a9;
+    -webkit-box-shadow:  0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow:  0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    box-shadow:  0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    top: 0;
+    left: 0; }
+    /* line 135, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav.sticky .menu-panel, body.generic-page .row-banner .explore-nav .menu-panel {
+      border: 1px solid silver;
+      border-top-color: transparent; }
+    /* line 143, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav.sticky .va-explore-megamenu p.menu-trigger, body.generic-page .row-banner .explore-nav .va-explore-megamenu p.menu-trigger {
+      color: #52555f; }
+    /* line 151, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav.sticky ul.bread-crumbs li a, body.generic-page .row-banner .explore-nav ul.bread-crumbs li a {
+      color: #52555f; }
+    /* line 154, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav.sticky ul.bread-crumbs li:after, body.generic-page .row-banner .explore-nav ul.bread-crumbs li:after {
+      color: #52555f; }
+    /* line 161, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav.sticky ul.hero-social p, .row-banner .explore-nav.sticky ul.explore-nav-social p, body.generic-page .row-banner .explore-nav ul.hero-social p, body.generic-page .row-banner .explore-nav ul.explore-nav-social p {
+      color: #52555f; }
+    /* line 170, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav.sticky ul.hero-social li a.fb, .row-banner .explore-nav.sticky ul.explore-nav-social li a.fb, body.generic-page .row-banner .explore-nav ul.hero-social li a.fb, body.generic-page .row-banner .explore-nav ul.explore-nav-social li a.fb {
+      background-position: -143px center; }
+      /* line 172, ../scss/global-modules/_nav-explore.scss */
+      .row-banner .explore-nav.sticky ul.hero-social li a.fb:hover, .row-banner .explore-nav.sticky ul.explore-nav-social li a.fb:hover, body.generic-page .row-banner .explore-nav ul.hero-social li a.fb:hover, body.generic-page .row-banner .explore-nav ul.explore-nav-social li a.fb:hover {
+        background-color: #bdcbd9; }
+    /* line 177, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav.sticky ul.hero-social li a.tw, .row-banner .explore-nav.sticky ul.explore-nav-social li a.tw, body.generic-page .row-banner .explore-nav ul.hero-social li a.tw, body.generic-page .row-banner .explore-nav ul.explore-nav-social li a.tw {
+      background-position: -197px center; }
+      /* line 179, ../scss/global-modules/_nav-explore.scss */
+      .row-banner .explore-nav.sticky ul.hero-social li a.tw:hover, .row-banner .explore-nav.sticky ul.explore-nav-social li a.tw:hover, body.generic-page .row-banner .explore-nav ul.hero-social li a.tw:hover, body.generic-page .row-banner .explore-nav ul.explore-nav-social li a.tw:hover {
+        background-color: #bde0ed; }
+    /* line 183, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav.sticky ul.hero-social li a.more, .row-banner .explore-nav.sticky ul.explore-nav-social li a.more, body.generic-page .row-banner .explore-nav ul.hero-social li a.more, body.generic-page .row-banner .explore-nav ul.explore-nav-social li a.more {
+      background-position: -245px center; }
+      /* line 185, ../scss/global-modules/_nav-explore.scss */
+      .row-banner .explore-nav.sticky ul.hero-social li a.more:hover, .row-banner .explore-nav.sticky ul.explore-nav-social li a.more:hover, body.generic-page .row-banner .explore-nav ul.hero-social li a.more:hover, body.generic-page .row-banner .explore-nav ul.explore-nav-social li a.more:hover {
+        background-color: #e5e8e4; }
+
+/* ===== Social Nav, mixed with sticky bg ====== */
+/* line 201, ../scss/global-modules/_nav-explore.scss */
+.row-banner {
+  z-index: 100; }
+
+/* line 214, ../scss/global-modules/_nav-explore.scss */
+ul.hero-social, ul.explore-nav-social {
+  position: absolute;
+  top: 7px;
+  right: 3%;
+  color: white; }
+  /* line 221, ../scss/global-modules/_nav-explore.scss */
+  ul.hero-social li, ul.explore-nav-social li {
+    margin-left: 0px;
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    vertical-align: middle; }
+    /* line 228, ../scss/global-modules/_nav-explore.scss */
+    ul.hero-social li p, ul.explore-nav-social li p {
+      color: white;
+      margin-right: 10px; }
+    /* line 233, ../scss/global-modules/_nav-explore.scss */
+    ul.hero-social li a, ul.explore-nav-social li a {
+      display: block;
+      margin-left: 0px; }
+      /* line 243, ../scss/global-modules/_nav-explore.scss */
+      ul.hero-social li a.fb, ul.explore-nav-social li a.fb {
+        background-position: 5px center; }
+      /* line 249, ../scss/global-modules/_nav-explore.scss */
+      ul.hero-social li a.tw, ul.explore-nav-social li a.tw {
+        background-position: -48px center; }
+      /* line 255, ../scss/global-modules/_nav-explore.scss */
+      ul.hero-social li a.more, ul.explore-nav-social li a.more {
+        background-position: -96px center; }
+
+/* line 269, ../scss/global-modules/_nav-explore.scss */
+.row-banner .explore-nav .va-explore-megamenu {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *vertical-align: auto;
+  *zoom: 1;
+  height: 44px;
+  z-index: 110; }
+  /* line 275, ../scss/global-modules/_nav-explore.scss */
+  .row-banner .explore-nav .va-explore-megamenu:hover {
+    background: white; }
+    /* line 277, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav .va-explore-megamenu:hover .menu-panel {
+      display: block; }
+    /* line 282, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav .va-explore-megamenu:hover p.menu-trigger {
+      color: #52555f; }
+  /* line 291, ../scss/global-modules/_nav-explore.scss */
+  .row-banner .explore-nav .va-explore-megamenu .menu-panel {
+    min-width: 560px;
+    height: 360px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 41px;
+    *top: 40px;
+    z-index: 10;
+    transition: max-height .5s ease-out; }
+    /* line 305, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav .va-explore-megamenu .menu-panel h5 {
+      margin-top: 15px; }
+    /* line 309, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav .va-explore-megamenu .menu-panel a {
+      color: #52555f; }
+    /* line 313, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav .va-explore-megamenu .menu-panel .menu-footer-nav {
+      width: 100%;
+      min-height: 40px;
+      background-color: #bec2c0;
+      bottom: 0;
+      left: 0;
+      position: absolute; }
+      /* line 322, ../scss/global-modules/_nav-explore.scss */
+      .row-banner .explore-nav .va-explore-megamenu .menu-panel .menu-footer-nav a {
+        display: inline-block;
+        *display: inline;
+        *vertical-align: auto;
+        *zoom: 1;
+        padding: 15px 10px;
+        vertical-align: middle; }
+      /* line 329, ../scss/global-modules/_nav-explore.scss */
+      .row-banner .explore-nav .va-explore-megamenu .menu-panel .menu-footer-nav .first a {
+        background: url(../images/icon-home.png) left center no-repeat;
+        display: inline-block;
+        padding-left: 25px;
+        margin-left: 10px; }
+      /* line 337, ../scss/global-modules/_nav-explore.scss */
+      .row-banner .explore-nav .va-explore-megamenu .menu-panel .menu-footer-nav .last {
+        text-align: right; }
+    /* line 353, ../scss/global-modules/_nav-explore.scss */
+    .row-banner .explore-nav .va-explore-megamenu .menu-panel ul {
+      position: relative;
+      z-index: 11;
+      float: left;
+      width: 50%;
+      margin-left: 0%;
+      margin-right: 0%;
+      *margin-right: 0%;
+      padding-left: 0;
+      padding-right: 0;
+      float: left;
+      position: relative; }
+      /* line 361, ../scss/global-modules/_nav-explore.scss */
+      .row-banner .explore-nav .va-explore-megamenu .menu-panel ul.first {
+        border-right: 1px solid silver; }
+      /* line 367, ../scss/global-modules/_nav-explore.scss */
+      .row-banner .explore-nav .va-explore-megamenu .menu-panel ul.last li {
+        margin-left: 25px; }
+      /* line 372, ../scss/global-modules/_nav-explore.scss */
+      .row-banner .explore-nav .va-explore-megamenu .menu-panel ul a:hover {
+        text-decoration: underline;
+        *text-decoration: underline !important; }
+      /* line 378, ../scss/global-modules/_nav-explore.scss */
+      .row-banner .explore-nav .va-explore-megamenu .menu-panel ul li {
+        list-style-type: none;
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 10px; }
+        /* line 384, ../scss/global-modules/_nav-explore.scss */
+        .row-banner .explore-nav .va-explore-megamenu .menu-panel ul li:hover {
+          cursor: pointer; }
+        /* line 390, ../scss/global-modules/_nav-explore.scss */
+        .row-banner .explore-nav .va-explore-megamenu .menu-panel ul li.special {
+          font-family: "myriad-pro-n4","myriad-pro",sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          padding: 8px 0;
+          margin-bottom: 9px;
+          border-top: 1px solid silver;
+          border-bottom: 1px solid silver;
+          transition: background-color .2s linear; }
+          /* line 399, ../scss/global-modules/_nav-explore.scss */
+          .row-banner .explore-nav .va-explore-megamenu .menu-panel ul li.special:hover {
+            background-color: #f7f0d7;
+            color: black; }
+          /* line 406, ../scss/global-modules/_nav-explore.scss */
+          .row-banner .explore-nav .va-explore-megamenu .menu-panel ul li.special a:link, .row-banner .explore-nav .va-explore-megamenu .menu-panel ul li.special a:active, .row-banner .explore-nav .va-explore-megamenu .menu-panel ul li.special a:visited, .row-banner .explore-nav .va-explore-megamenu .menu-panel ul li.special a:hover {
+            font-family: "myriad-pro-n4","myriad-pro",sans-serif;
+            font-style: normal;
+            font-weight: 400; }
+          /* line 410, ../scss/global-modules/_nav-explore.scss */
+          .row-banner .explore-nav .va-explore-megamenu .menu-panel ul li.special a:hover {
+            color: black; }
+
+/* === end _nav-explore.scss === */
+/* line 33, ../scss/global-modules/_banner.scss */
+.row.row-banner {
+  background-position: center top;
+  background-repeat: no-repeat; }
+
+/* line 38, ../scss/global-modules/_banner.scss */
+.row.row-subnav {
+  background-position: center -380px;
+  background-repeat: no-repeat; }
+
+/* line 44, ../scss/global-modules/_banner.scss */
+.row-banner .intro {
+  background-position: center top;
+  background-repeat: no-repeat; }
+
+/* line 57, ../scss/global-modules/_banner.scss */
+body.home-page .row.row-banner, body.benefit-page .row.row-banner {
+  height: 380px; }
+  /* line 59, ../scss/global-modules/_banner.scss */
+  body.home-page .row.row-banner .main, body.benefit-page .row.row-banner .main {
+    overflow: visible; }
+/* line 65, ../scss/global-modules/_banner.scss */
+body.home-page #hero-video, body.home-page #get-started, body.benefit-page #hero-video, body.benefit-page #get-started {
+  position: absolute;
+  top: 255px; }
+/* line 70, ../scss/global-modules/_banner.scss */
+body.home-page #hero-video, body.benefit-page #hero-video {
+  left: 68%; }
+/* line 73, ../scss/global-modules/_banner.scss */
+body.home-page #get-started, body.benefit-page #get-started {
+  left: 2%; }
+/* line 81, ../scss/global-modules/_banner.scss */
+body.home-page .intro h1, body.home-page .intro h2, body.home-page .intro h3, body.home-page .intro h4, body.home-page .intro h5, body.home-page .intro p, body.home-page .intro a, body.benefit-page .intro h1, body.benefit-page .intro h2, body.benefit-page .intro h3, body.benefit-page .intro h4, body.benefit-page .intro h5, body.benefit-page .intro p, body.benefit-page .intro a {
+  color: white;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.8); }
+/* line 86, ../scss/global-modules/_banner.scss */
+body.home-page .intro h1, body.home-page .intro h4, body.benefit-page .intro h1, body.benefit-page .intro h4 {
+  width: 60%; }
+/* line 89, ../scss/global-modules/_banner.scss */
+body.home-page .intro h1, body.benefit-page .intro h1 {
+  margin-top: 75px;
+  font-size: 4.375em; }
+/* line 93, ../scss/global-modules/_banner.scss */
+body.home-page .intro h4, body.benefit-page .intro h4 {
+  margin-top: 20px; }
+
+/* line 114, ../scss/global-modules/_banner.scss */
+body.home-page .row-banner {
+  background: url("../images/photo-hero-eiler.jpg") center top no-repeat !important; }
+
+/* line 121, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-disability .row.row-banner {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+/* line 124, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-disability .row.row-subnav {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+
+/* line 132, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-education .row.row-banner {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+/* line 135, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-education .row.row-subnav {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+
+/* line 141, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-employment .row.row-banner {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+/* line 144, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-employment .row.row-subnav {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+
+/* line 151, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-health-care .row.row-banner {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+/* line 154, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-health-care .row.row-subnav {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+
+/* line 160, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-home-loans .row.row-banner {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+/* line 163, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-home-loans .row.row-subnav {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+
+/* line 169, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-life-insurance .row.row-banner {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+/* line 172, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-life-insurance .row.row-subnav {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+
+/* line 179, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-memorial .row.row-banner {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+/* line 182, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-memorial .row.row-subnav {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+
+/* line 188, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-pensions .row.row-banner {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+/* line 191, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-pensions .row.row-subnav {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+
+/* line 197, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-spouses .row.row-banner {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+/* line 200, ../scss/global-modules/_banner.scss */
+body.benefit-page.benefit-spouses .row.row-subnav {
+  background-image: url("../images/photo-hero-senior-man.jpg"); }
+
+/* === begin benefit subnav === */
+/* line 9, ../scss/global-modules/_subnav.scss */
+ul.subnav, ul.subSubNav {
+  text-align: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  *margin-right: 0%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  opacity: 100; }
+  /* line 18, ../scss/global-modules/_subnav.scss */
+  ul.subnav li, ul.subSubNav li {
+    list-style-type: none;
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    background: #f7f9f4 url(../images/graphic-sub-nav-separator.png) right top no-repeat;
+    padding: 0;
+    margin: 0;
+    vertical-align: top; }
+    /* line 35, ../scss/global-modules/_subnav.scss */
+    ul.subnav li.condensed a, ul.subSubNav li.condensed a {
+      font-family: "myriad-pro-condensed-n3","myriad-pro-condensed",sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.125em;
+      letter-spacing: 0px; }
+    /* line 42, ../scss/global-modules/_subnav.scss */
+    ul.subnav li a, ul.subSubNav li a {
+      display: inline-block;
+      *display: inline;
+      *vertical-align: auto;
+      *zoom: 1;
+      vertical-align: middle;
+      text-align: center;
+      width: 100%;
+      padding: 20px 0px 0 0px;
+      background: url(../images/sprite-subnav.png) center -1000px no-repeat;
+      white-space: normal; }
+      /* line 52, ../scss/global-modules/_subnav.scss */
+      ul.subnav li a:hover, ul.subSubNav li a:hover {
+        background-position: center -100px;
+        text-decoration: none; }
+      /* line 58, ../scss/global-modules/_subnav.scss */
+      ul.subnav li a.selected, ul.subSubNav li a.selected {
+        background-position: center 0px;
+        font-family: "myriad-pro-n4","myriad-pro",sans-serif;
+        font-style: normal;
+        font-weight: 400; }
+
+/* line 68, ../scss/global-modules/_subnav.scss */
+ul.subSubNav {
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  max-height: 0px;
+  transition: max-height .5s ease-out,background-position .1s ease-out;
+  text-align: center;
+  background: url(../images/bg-subSubNav.png) center -50px no-repeat; }
+  /* line 80, ../scss/global-modules/_subnav.scss */
+  ul.subSubNav li {
+    width: 25%;
+    background-color: transparent; }
+    /* line 84, ../scss/global-modules/_subnav.scss */
+    ul.subSubNav li a {
+      padding-left: 20px;
+      padding-right: 20px; }
+    /* line 89, ../scss/global-modules/_subnav.scss */
+    ul.subSubNav li.last-item {
+      background-image: none; }
+  /* line 94, ../scss/global-modules/_subnav.scss */
+  ul.subSubNav.showSubSubNav {
+    max-height: 60px;
+    background-position: center 7px; }
+
+/* line 101, ../scss/global-modules/_subnav.scss */
+#video_modal {
+  display: none; }
+
+/* === end benefit subnav === */
+/* ==== BEGIN benefit-navigator ad block  (bn-ad.scss)=== */
+/* line 7, ../scss/global-modules/_bn-ad.scss */
+.row.row-ad {
+  background: #e7e7e3 url("../images/image-bnAd-map.png") center bottom no-repeat;
+  border-top: 10px solid #EFF0EB; }
+  /* line 12, ../scss/global-modules/_bn-ad.scss */
+  .row.row-ad .main {
+    min-height: 220px; }
+    /* line 16, ../scss/global-modules/_bn-ad.scss */
+    .row.row-ad .main .veteran-photo {
+      width: 24%;
+      margin-left: 0%;
+      margin-right: 0%;
+      *margin-right: 0%;
+      padding-left: 0;
+      padding-right: 0;
+      float: left;
+      position: relative;
+      background: url(../images/photo-bnAd-angie.png) left bottom no-repeat;
+      min-height: 220px;
+      background-size: contain; }
+    /* line 27, ../scss/global-modules/_bn-ad.scss */
+    .row.row-ad .main .call-to-action {
+      margin-top: 90px;
+      width: 26%;
+      margin-left: 0%;
+      margin-right: 0%;
+      *margin-right: 0%;
+      padding-left: 0;
+      padding-right: 0;
+      float: left;
+      position: relative; }
+    /* line 36, ../scss/global-modules/_bn-ad.scss */
+    .row.row-ad .main .ad-copy {
+      margin-top: 65px;
+      width: 50%;
+      margin-left: 0%;
+      margin-right: 0%;
+      *margin-right: 0%;
+      padding-left: 0;
+      padding-right: 0;
+      float: left;
+      position: relative;
+      margin-left: 0; }
+      /* line 44, ../scss/global-modules/_bn-ad.scss */
+      .row.row-ad .main .ad-copy h2 {
+        font-size: 2.5em;
+        color: #757a88; }
+      /* line 48, ../scss/global-modules/_bn-ad.scss */
+      .row.row-ad .main .ad-copy h5 {
+        margin-top: 10px; }
+
+/* === end benefit-navigator ad block  (bn-ad.scss) === */
+/* === begin app-process-widget.scss === */
+/* line 4, ../scss/global-modules/_app-process-widget.scss */
+.row.row-content ul.application-process {
+  width: 100%;
+  float: left;
+  white-space: nowrap; }
+  /* line 10, ../scss/global-modules/_app-process-widget.scss */
+  .row.row-content ul.application-process li {
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    vertical-align: top;
+    margin-right: 15px;
+    border: 1px solid #bec2c0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+    white-space: normal; }
+    /* line 21, ../scss/global-modules/_app-process-widget.scss */
+    .row.row-content ul.application-process li .intro-panel {
+      min-height: 230px;
+      width: 180px;
+      background: white;
+      float: left; }
+    /* line 28, ../scss/global-modules/_app-process-widget.scss */
+    .row.row-content ul.application-process li p {
+      margin: 0; }
+    /* line 32, ../scss/global-modules/_app-process-widget.scss */
+    .row.row-content ul.application-process li h4 {
+      text-align: center;
+      color: white;
+      font-family: "myriad-pro-n4","myriad-pro",sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      background: #999;
+      margin: 0;
+      padding: 15px 0; }
+      /* line 40, ../scss/global-modules/_app-process-widget.scss */
+      .row.row-content ul.application-process li h4.orange {
+        background-color: #e88d5e; }
+      /* line 43, ../scss/global-modules/_app-process-widget.scss */
+      .row.row-content ul.application-process li h4.yellow {
+        background-color: #f9ce63;
+        color: #c2202f; }
+      /* line 47, ../scss/global-modules/_app-process-widget.scss */
+      .row.row-content ul.application-process li h4.green {
+        background-color: #51782e; }
+      /* line 50, ../scss/global-modules/_app-process-widget.scss */
+      .row.row-content ul.application-process li h4.blue {
+        background-color: #1981b8; }
+    /* line 55, ../scss/global-modules/_app-process-widget.scss */
+    .row.row-content ul.application-process li .gutter, .row.row-content ul.application-process li .row-banner .explore-nav .va-explore-megamenu .menu-panel .wrapper, .row-banner .explore-nav .va-explore-megamenu .menu-panel .row.row-content ul.application-process li .wrapper {
+      padding: 0;
+      padding: 15px; }
+    /* line 60, ../scss/global-modules/_app-process-widget.scss */
+    .row.row-content ul.application-process li .more-info {
+      min-height: 230px;
+      max-width: 0;
+      float: left; }
+
+/* === end app-process-widget.scss === */
+/* ==== BEGIN @Buttons (_buttons-and-forms.scss) ==== */
+/* line 6, ../scss/global-modules/_buttons-and-forms.scss */
+a.vae-button, input[type="submit"], button, input[type="button"] {
+  display: inline-block;
+  *display: inline;
+  *vertical-align: auto;
+  *zoom: 1;
+  font-size: 1.1875em;
+  color: white;
+  padding: 8px 20px;
+  border: 1px solid white;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  text-decoration: none !important; }
+  /* line 16, ../scss/global-modules/_buttons-and-forms.scss */
+  a.vae-button:hover, input[type="submit"]:hover, button:hover, input[type="button"]:hover {
+    background: #d82434;
+    text-decoration: none;
+    cursor: pointer; }
+  /* line 22, ../scss/global-modules/_buttons-and-forms.scss */
+  a.vae-button.inline-small, a.vae-button.inline a.vae-button.quick-access, input[type="submit"].inline-small, input[type="submit"].inline input[type="submit"].quick-access, button.inline-small, button.inline button.quick-access, input[type="button"].inline-small, input[type="button"].inline input[type="button"].quick-access {
+    font-size: 1em;
+    padding: 5px 18px;
+    border-radius: 1em;
+    line-height: 1em; }
+  /* line 29, ../scss/global-modules/_buttons-and-forms.scss */
+  a.vae-button.quick-access, input[type="submit"].quick-access, button.quick-access, input[type="button"].quick-access {
+    padding: 5px 10px 5px 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    background: #e5e7e6;
+    color: #52555f;
+    border-color: #d8dbda; }
+    /* line 36, ../scss/global-modules/_buttons-and-forms.scss */
+    a.vae-button.quick-access:hover, input[type="submit"].quick-access:hover, button.quick-access:hover, input[type="button"].quick-access:hover {
+      background: #d8dbda; }
+    /* line 40, ../scss/global-modules/_buttons-and-forms.scss */
+    a.vae-button.quick-access span, input[type="submit"].quick-access span, button.quick-access span, input[type="button"].quick-access span {
+      font-size: 75%;
+      color: #a4a7a9;
+      display: inline-block;
+      *display: inline;
+      *vertical-align: auto;
+      *zoom: 1;
+      margin-left: 5px;
+      vertical-align: middle; }
+  /* line 50, ../scss/global-modules/_buttons-and-forms.scss */
+  a.vae-button.small, input[type="submit"].small, button.small, input[type="button"].small {
+    font-size: 1em;
+    padding: 5px 18px;
+    border-radius: 1em; }
+  /* line 56, ../scss/global-modules/_buttons-and-forms.scss */
+  a.vae-button.large, body.home-page a.row.row-ad, body.page-template a.row.row-ad, .row.row-ad a.bn-advert-button, body.benefit-page .row.row-ad a.bn-advert-button, input[type="submit"].large, button.large, input[type="button"].large {
+    font-size: 1.3125em;
+    padding: 12px 28px; }
+  /* line 61, ../scss/global-modules/_buttons-and-forms.scss */
+  a.vae-button.variation, input[type="submit"].variation, button.variation, input[type="button"].variation {
+    padding-right: 0; }
+    /* line 62, ../scss/global-modules/_buttons-and-forms.scss */
+    a.vae-button.variation:after, input[type="submit"].variation:after, button.variation:after, input[type="button"].variation:after {
+      content: "\25b7";
+      padding-left: .8em;
+      padding-right: .8em;
+      font-size: 80%;
+      vertical-align: middle;
+      display: inline-block; }
+  /* line 75, ../scss/global-modules/_buttons-and-forms.scss */
+  a.vae-button strong, input[type="submit"] strong, button strong, input[type="button"] strong {
+    padding-right: 35px;
+    font-weight: 300;
+    background-image: url("../images/button-triangle-white.png");
+    background-position: right 2.5px;
+    *background-position: right 0px;
+    background-repeat: no-repeat; }
+    /* line 83, ../scss/global-modules/_buttons-and-forms.scss */
+    a.vae-button strong:hover, input[type="submit"] strong:hover, button strong:hover, input[type="button"] strong:hover {
+      background-position: right -123px;
+      *background-position: right -125px; }
+  /* line 89, ../scss/global-modules/_buttons-and-forms.scss */
+  a.vae-button.button-1, body.home-page a.row.row-ad, body.page-template a.row.row-ad, .row.row-ad a.bn-advert-button, input[type="submit"].button-1, button.button-1, input[type="button"].button-1 {
+    background: #c2202f; }
+    /* line 92, ../scss/global-modules/_buttons-and-forms.scss */
+    a.vae-button.button-1:hover, body.home-page a.row.row-ad:hover, body.page-template a.row.row-ad:hover, .row.row-ad a.bn-advert-button:hover, input[type="submit"].button-1:hover, button.button-1:hover, input[type="button"].button-1:hover {
+      background: #d82434; }
+  /* line 98, ../scss/global-modules/_buttons-and-forms.scss */
+  a.vae-button.button-2, body.benefit-page .row.row-ad a.bn-advert-button, input[type="submit"].button-2, button.button-2, input[type="button"].button-2 {
+    background: #1981b8; }
+    /* line 100, ../scss/global-modules/_buttons-and-forms.scss */
+    a.vae-button.button-2:hover, body.benefit-page .row.row-ad a.bn-advert-button:hover, input[type="submit"].button-2:hover, button.button-2:hover, input[type="button"].button-2:hover {
+      background: #1c91ce; }
+  /* line 105, ../scss/global-modules/_buttons-and-forms.scss */
+  a.vae-button.button-3, input[type="submit"].button-3, button.button-3, input[type="button"].button-3 {
+    background-color: #dfe0da;
+    color: #52555f !important; }
+    /* line 109, ../scss/global-modules/_buttons-and-forms.scss */
+    a.vae-button.button-3:hover, input[type="submit"].button-3:hover, button.button-3:hover, input[type="button"].button-3:hover {
+      background-color: #d3d5cc; }
+  /* line 114, ../scss/global-modules/_buttons-and-forms.scss */
+  a.vae-button.explore-link, input[type="submit"].explore-link, button.explore-link, input[type="button"].explore-link {
+    background-color: transparent;
+    color: #52555f !important;
+    border-color: #c7c9be; }
+    /* line 120, ../scss/global-modules/_buttons-and-forms.scss */
+    a.vae-button.explore-link:hover, input[type="submit"].explore-link:hover, button.explore-link:hover, input[type="button"].explore-link:hover {
+      background-color: #edefe9; }
+  /* line 127, ../scss/global-modules/_buttons-and-forms.scss */
+  a.vae-button.button-video, input[type="submit"].button-video, button.button-video, input[type="button"].button-video {
+    background-color: transparent;
+    background-image: url(../images/sprite-video-play.png);
+    background-position: right 7px;
+    background-repeat: no-repeat;
+    padding-right: 50px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: none;
+    font-size: 1.625em; }
+
+/* ===== END buttons ==== */
+/*======= Begin modals.scss =====*/
+/* line 6, ../scss/global-modules/_modals.scss */
+body .ui-widget-overlay.ui-front {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  opacity: 1;
+  *background-color: black;
+  *filter: Alpha(Opacity=100);
+  *background-image: url(../images/modal-screen-black-90.png) repeat; }
+/* line 16, ../scss/global-modules/_modals.scss */
+body .ui-dialog .ui-dialog-titlebar {
+  display: none; }
+
+/* line 22, ../scss/global-modules/_modals.scss */
+.ui-dialog.ui-widget.ui-widget-content {
+  background: none;
+  border: none;
+  overflow: hidden; }
+
+/* line 33, ../scss/global-modules/_modals.scss */
+.modal {
+  position: relative;
+  border: none; }
+  /* line 43, ../scss/global-modules/_modals.scss */
+  .modal h4, .modal p {
+    text-align: left; }
+  /* line 52, ../scss/global-modules/_modals.scss */
+  .modal a.close-modal {
+    position: absolute;
+    top: .4%;
+    right: .75px;
+    font-size: 24px;
+    text-decoration: none; }
+
+/* line 66, ../scss/global-modules/_modals.scss */
+.modal.video-modal {
+  padding-top: 30px;
+  overflow: hidden;
+  width: 100%; }
+  /* line 74, ../scss/global-modules/_modals.scss */
+  .modal.video-modal a.close-modal {
+    color: white; }
+  /* line 78, ../scss/global-modules/_modals.scss */
+  .modal.video-modal .gutter, .modal.video-modal .row-banner .explore-nav .va-explore-megamenu .menu-panel .wrapper, .row-banner .explore-nav .va-explore-megamenu .menu-panel .modal.video-modal .wrapper {
+    position: relative;
+    background: white; }
+  /* line 83, ../scss/global-modules/_modals.scss */
+  .modal.video-modal .modal-wrap {
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    width: 700px;
+    position: relative;
+    overflow: hidden; }
+  /* line 105, ../scss/global-modules/_modals.scss */
+  .modal.video-modal h4, .modal.video-modal p {
+    text-align: left;
+    width: 75%;
+    display: block;
+    float: left;
+    clear: left; }
+  /* line 114, ../scss/global-modules/_modals.scss */
+  .modal.video-modal ul.video-social-share {
+    display: block;
+    float: right;
+    *position: absolute;
+    *top: 20px;
+    *right: 40px; }
+    /* line 123, ../scss/global-modules/_modals.scss */
+    .modal.video-modal ul.video-social-share li {
+      margin-right: 2px;
+      display: inline-block;
+      *display: inline;
+      *vertical-align: auto;
+      *zoom: 1; }
+      /* line 128, ../scss/global-modules/_modals.scss */
+      .modal.video-modal ul.video-social-share li a {
+        display: block;
+        height: 35px;
+        width: 35px;
+        background-image: url(../images/sprite-banner-social.png);
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        margin: 0;
+        padding: 0; }
+        /* line 139, ../scss/global-modules/_modals.scss */
+        .modal.video-modal ul.video-social-share li a.fb {
+          background-position: -138px center; }
+          /* line 141, ../scss/global-modules/_modals.scss */
+          .modal.video-modal ul.video-social-share li a.fb:hover {
+            background-color: #bdcbd9; }
+        /* line 146, ../scss/global-modules/_modals.scss */
+        .modal.video-modal ul.video-social-share li a.tw {
+          background-position: -192px center; }
+          /* line 148, ../scss/global-modules/_modals.scss */
+          .modal.video-modal ul.video-social-share li a.tw:hover {
+            background-color: #bde0ed; }
+        /* line 152, ../scss/global-modules/_modals.scss */
+        .modal.video-modal ul.video-social-share li a.more {
+          background-position: -240px center; }
+          /* line 154, ../scss/global-modules/_modals.scss */
+          .modal.video-modal ul.video-social-share li a.more:hover {
+            background-color: #e5e8e4; }
+
+/*======= end Begin modals.scss =====*/
+/* ======== begin _footers.scess =================*/
+/* ===== Begin Main @Footer ====== */
+/* line 6, ../scss/global-modules/_footers.scss */
+#footer, .row-footer {
+  background-color: #002e4c;
+  border-top: 3px solid #1981b8; }
+  /* line 14, ../scss/global-modules/_footers.scss */
+  #footer .main, .row-footer .main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden; }
+  /* line 22, ../scss/global-modules/_footers.scss */
+  #footer h4, #footer h5, #footer h6, .row-footer h4, .row-footer h5, .row-footer h6 {
+    color: #e1e6e9;
+    font-weight: 400; }
+  /* line 28, ../scss/global-modules/_footers.scss */
+  #footer h5, .row-footer h5 {
+    margin-bottom: 25px; }
+  /* line 32, ../scss/global-modules/_footers.scss */
+  #footer h6, .row-footer h6 {
+    margin-top: 25px;
+    margin-bottom: 10px; }
+  /* line 38, ../scss/global-modules/_footers.scss */
+  #footer .explore-search input[type="text"], .row-footer .explore-search input[type="text"] {
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    width: 140px;
+    border: none;
+    vertical-align: middle;
+    height: 30px; }
+  /* line 47, ../scss/global-modules/_footers.scss */
+  #footer .explore-search .search-button, .row-footer .explore-search .search-button {
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    background: #c2202f url(../images/sprite-searchGlass.png) center 6px no-repeat;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 15px; }
+    /* line 55, ../scss/global-modules/_footers.scss */
+    #footer .explore-search .search-button:hover, .row-footer .explore-search .search-button:hover {
+      background-color: #de3746; }
+  /* line 64, ../scss/global-modules/_footers.scss */
+  #footer ul.footer-links, .row-footer ul.footer-links {
+    padding: none; }
+    /* line 69, ../scss/global-modules/_footers.scss */
+    #footer ul.footer-links.with-divider, .row-footer ul.footer-links.with-divider {
+      border-right: 1px solid #1e435e; }
+    /* line 74, ../scss/global-modules/_footers.scss */
+    #footer ul.footer-links li, .row-footer ul.footer-links li {
+      list-style-type: none;
+      border: none;
+      margin-bottom: 14px; }
+      /* line 79, ../scss/global-modules/_footers.scss */
+      #footer ul.footer-links li a, .row-footer ul.footer-links li a {
+        display: inline-block;
+        *display: inline;
+        *vertical-align: auto;
+        *zoom: 1; }
+        /* line 82, ../scss/global-modules/_footers.scss */
+        #footer ul.footer-links li a:link, #footer ul.footer-links li a:active, #footer ul.footer-links li a:visited, .row-footer ul.footer-links li a:link, .row-footer ul.footer-links li a:active, .row-footer ul.footer-links li a:visited {
+          color: #f2f4f6; }
+      /* line 87, ../scss/global-modules/_footers.scss */
+      #footer ul.footer-links li a.benefit-link, .row-footer ul.footer-links li a.benefit-link {
+        background-image: url("../images/sprite-footer-50.png");
+        background-repeat: no-repeat;
+        background-position: -100px 0;
+        padding-left: 30px;
+        display: inline-block;
+        *display: inline;
+        *vertical-align: auto;
+        *zoom: 1; }
+        /* line 97, ../scss/global-modules/_footers.scss */
+        #footer ul.footer-links li a.benefit-link:link, #footer ul.footer-links li a.benefit-link:active, #footer ul.footer-links li a.benefit-link:visited, .row-footer ul.footer-links li a.benefit-link:link, .row-footer ul.footer-links li a.benefit-link:active, .row-footer ul.footer-links li a.benefit-link:visited {
+          color: #f2f4f6; }
+        /* line 101, ../scss/global-modules/_footers.scss */
+        #footer ul.footer-links li a.benefit-link[data-benefit='disability-compensation'], .row-footer ul.footer-links li a.benefit-link[data-benefit='disability-compensation'] {
+          background-position: 0px 0px; }
+        /* line 104, ../scss/global-modules/_footers.scss */
+        #footer ul.footer-links li a.benefit-link[data-benefit='education-training'], .row-footer ul.footer-links li a.benefit-link[data-benefit='education-training'] {
+          background-position: 0px -50px; }
+        /* line 107, ../scss/global-modules/_footers.scss */
+        #footer ul.footer-links li a.benefit-link[data-benefit='employment-services'], .row-footer ul.footer-links li a.benefit-link[data-benefit='employment-services'] {
+          background-position: 0px -100px; }
+        /* line 110, ../scss/global-modules/_footers.scss */
+        #footer ul.footer-links li a.benefit-link[data-benefit='health-care'], .row-footer ul.footer-links li a.benefit-link[data-benefit='health-care'] {
+          background-position: 0px -150px; }
+        /* line 113, ../scss/global-modules/_footers.scss */
+        #footer ul.footer-links li a.benefit-link[data-benefit='home-loans'], .row-footer ul.footer-links li a.benefit-link[data-benefit='home-loans'] {
+          background-position: 0px -200px; }
+        /* line 116, ../scss/global-modules/_footers.scss */
+        #footer ul.footer-links li a.benefit-link[data-benefit='life-insurance'], .row-footer ul.footer-links li a.benefit-link[data-benefit='life-insurance'] {
+          background-position: 0px -250px; }
+        /* line 119, ../scss/global-modules/_footers.scss */
+        #footer ul.footer-links li a.benefit-link[data-benefit='memorial-benefits'], .row-footer ul.footer-links li a.benefit-link[data-benefit='memorial-benefits'] {
+          background-position: 0px -300px; }
+        /* line 122, ../scss/global-modules/_footers.scss */
+        #footer ul.footer-links li a.benefit-link[data-benefit='pensions'], .row-footer ul.footer-links li a.benefit-link[data-benefit='pensions'] {
+          background-position: 0px -350px; }
+        /* line 125, ../scss/global-modules/_footers.scss */
+        #footer ul.footer-links li a.benefit-link[data-benefit='spouses-dependents'], .row-footer ul.footer-links li a.benefit-link[data-benefit='spouses-dependents'] {
+          background-position: 0px -400px; }
+        /* line 129, ../scss/global-modules/_footers.scss */
+        #footer ul.footer-links li a.benefit-link:hover, .row-footer ul.footer-links li a.benefit-link:hover {
+          color: white;
+          background-image: url("../images/sprite-footer-100.png"); }
+
+/* line 148, ../scss/global-modules/_footers.scss */
+.row-va-subfooter {
+  background-color: #00263f; }
+  /* line 151, ../scss/global-modules/_footers.scss */
+  .row-va-subfooter ul.va-sub-nav li {
+    min-width: 11.5%;
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    text-align: center;
+    vertical-align: middle; }
+    /* line 160, ../scss/global-modules/_footers.scss */
+    .row-va-subfooter ul.va-sub-nav li.first a {
+      height: 70px; }
+    /* line 167, ../scss/global-modules/_footers.scss */
+    .row-va-subfooter ul.va-sub-nav li a:link, .row-va-subfooter ul.va-sub-nav li a:active, .row-va-subfooter ul.va-sub-nav li a:visited, .row-va-subfooter ul.va-sub-nav li a:hover {
+      color: #d0d4da;
+      font-family: "myriad-pro-n4","myriad-pro",sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.875em; }
+    /* line 172, ../scss/global-modules/_footers.scss */
+    .row-va-subfooter ul.va-sub-nav li a:hover {
+      color: white; }
+
+/* line 182, ../scss/global-modules/_footers.scss */
+.row.row-subfooter {
+  background: #151515 url(../images/diagonal.png); }
+  /* line 184, ../scss/global-modules/_footers.scss */
+  .row.row-subfooter .main {
+    min-height: 60px; }
+
+/* ========  END _footers.scess =================*/
+/* line 26, ../scss/va-explore-styles.scss */
+#content {
+  padding-bottom: 60px; }
+
+/* line 38, ../scss/va-explore-styles.scss */
+.col-sidebar {
+  transition: max-height .66s ease;
+  -webkit-transition: max-height .66s ease;
+  max-height: 1500px;
+  position: relative; }
+  /* line 44, ../scss/va-explore-styles.scss */
+  .col-sidebar a.show-more {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background: url(../images/bg-more-resources.png) center bottom repeat-x;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    text-transform: uppercase; }
+    /* line 54, ../scss/va-explore-styles.scss */
+    .col-sidebar a.show-more:hover {
+      text-decoration: none; }
+  /* line 60, ../scss/va-explore-styles.scss */
+  .col-sidebar.show-part {
+    max-height: 650px; }
+
+/* line 66, ../scss/va-explore-styles.scss */
+span.flippy-triangle {
+  display: inline-block;
+  width: 15px;
+  text-align: left; }
+
+/* line 74, ../scss/va-explore-styles.scss */
+.bump-left {
+  margin-left: 15%; }
+
+/* line 78, ../scss/va-explore-styles.scss */
+.z-index-fix {
+  *z-index: 10; }
+
+/* line 7, ../scss/page-templates/_home-page.scss */
+.row.row-social-portal-callout .call-out {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  text-align: center; }
+/* line 20, ../scss/page-templates/_home-page.scss */
+.row.row-social-portal-callout .main {
+  border-top: 1px solid #E7E7E3;
+  background: url(../images/social-callout-icons.png) center center no-repeat;
+  background-size: contain; }
+
+/* line 29, ../scss/page-templates/_home-page.scss */
+ul.icon-grid {
+  text-align: center; }
+  /* line 33, ../scss/page-templates/_home-page.scss */
+  ul.icon-grid li {
+    list-style-type: none;
+    width: 290px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    vertical-align: top;
+    position: relative;
+    padding-left: 0; }
+    /* line 44, ../scss/page-templates/_home-page.scss */
+    ul.icon-grid li a {
+      font-size: 1.3125em;
+      display: block;
+      text-align: left;
+      vertical-align: middle; }
+      /* line 54, ../scss/page-templates/_home-page.scss */
+      ul.icon-grid li a span {
+        display: inline-block;
+        *display: inline;
+        *vertical-align: auto;
+        *zoom: 1;
+        vertical-align: middle;
+        width: 60%; }
+      /* line 60, ../scss/page-templates/_home-page.scss */
+      ul.icon-grid li a i {
+        display: inline-block;
+        *display: inline;
+        *vertical-align: auto;
+        *zoom: 1;
+        background-image: url("../images/sprite-benefit-icons-horizontal.png");
+        background-repeat: no-repeat;
+        height: 110px;
+        width: 40%;
+        vertical-align: middle; }
+    /* line 83, ../scss/page-templates/_home-page.scss */
+    ul.icon-grid li[data-benefit='disability-compensation'] i {
+      background-position: 0 center; }
+    /* line 86, ../scss/page-templates/_home-page.scss */
+    ul.icon-grid li[data-benefit='education-training'] i {
+      background-position: -500px center; }
+    /* line 89, ../scss/page-templates/_home-page.scss */
+    ul.icon-grid li[data-benefit='employment-services'] i {
+      background-position: -1000px center; }
+    /* line 92, ../scss/page-templates/_home-page.scss */
+    ul.icon-grid li[data-benefit='health-care'] i {
+      background-position: -1500px center; }
+    /* line 95, ../scss/page-templates/_home-page.scss */
+    ul.icon-grid li[data-benefit='home-loans'] i {
+      background-position: -2000px center; }
+    /* line 98, ../scss/page-templates/_home-page.scss */
+    ul.icon-grid li[data-benefit='life-insurance'] i {
+      background-position: -2500px center; }
+    /* line 101, ../scss/page-templates/_home-page.scss */
+    ul.icon-grid li[data-benefit='memorial-benefits'] i {
+      background-position: -3000px center; }
+    /* line 104, ../scss/page-templates/_home-page.scss */
+    ul.icon-grid li[data-benefit='pensions'] i {
+      background-position: -3500px center; }
+    /* line 107, ../scss/page-templates/_home-page.scss */
+    ul.icon-grid li[data-benefit='spouses-dependents'] i {
+      background-position: -4000px center; }
+    /* line 111, ../scss/page-templates/_home-page.scss */
+    ul.icon-grid li div.tool-tip {
+      display: none;
+      position: absolute;
+      top: -110px;
+      left: 0px;
+      overflow: visible; }
+      /* line 118, ../scss/page-templates/_home-page.scss */
+      ul.icon-grid li div.tool-tip p {
+        position: relative;
+        background-color: white;
+        font-size: 14px;
+        border-radius: 10px;
+        padding: 12px;
+        *border: 1px solid silver;
+        text-align: left;
+        -webkit-box-shadow: 0px 2px 14px 0px rgba(50, 50, 50, 0.25);
+        -moz-box-shadow: 0px 2px 14px 0px rgba(50, 50, 50, 0.25);
+        box-shadow: 0px 2px 14px 0px rgba(50, 50, 50, 0.25); }
+        /* line 130, ../scss/page-templates/_home-page.scss */
+        ul.icon-grid li div.tool-tip p:after {
+          display: block;
+          position: absolute;
+          bottom: -30px;
+          left: 12%;
+          content: " ";
+          border-style: solid;
+          border-width: 15px;
+          border-color: white transparent transparent transparent; }
+    /* line 143, ../scss/page-templates/_home-page.scss */
+    ul.icon-grid li:hover {
+      cursor: pointer; }
+      /* line 144, ../scss/page-templates/_home-page.scss */
+      ul.icon-grid li:hover div.tool-tip {
+        display: block; }
+
+/* ==== BEGIN benefit-template ====  */
+/* line 5, ../scss/page-templates/_benefit-section-template.scss */
+body.benefit-page {
+  /* == begin @Apply-block === */
+  /* == begin @Apply-block === */
+  /* == begin @Apply-block === */
+  /* == begin @Apply-block === */ }
+  /* line 5, ../scss/page-templates/apply-blocks/_apply-block.scss */
+  body.benefit-page ul.apply-block {
+    text-align: left;
+    position: relative;
+    float: left;
+    margin-bottom: 16px; }
+    /* line 12, ../scss/page-templates/apply-blocks/_apply-block.scss */
+    body.benefit-page ul.apply-block p {
+      font-size: 15.5px; }
+    /* line 17, ../scss/page-templates/apply-blocks/_apply-block.scss */
+    body.benefit-page ul.apply-block li {
+      list-style-type: none; }
+      /* line 20, ../scss/page-templates/apply-blocks/_apply-block.scss */
+      body.benefit-page ul.apply-block li.or-1, body.benefit-page ul.apply-block li.or-2, body.benefit-page ul.apply-block li.or-3 {
+        position: absolute;
+        background: #fff;
+        top: 195px;
+        left: 33.5%;
+        border-radius: 0 50% 50% 0;
+        z-index: 8;
+        height: 2.8125em;
+        width: 2.8125em;
+        line-height: 2.5em;
+        text-align: center; }
+      /* line 33, ../scss/page-templates/apply-blocks/_apply-block.scss */
+      body.benefit-page ul.apply-block li.or-2 {
+        background: #ebece8;
+        left: 64.5%;
+        *left: 65.5%; }
+      /* line 39, ../scss/page-templates/apply-blocks/_apply-block.scss */
+      body.benefit-page ul.apply-block li.apply-option {
+        position: relative;
+        list-style-type: none;
+        display: inline-block;
+        *display: inline;
+        *vertical-align: auto;
+        *zoom: 1;
+        padding: 0;
+        vertical-align: middle;
+        width: 31%;
+        background: #ebece8;
+        border: 2px solid #c7c9be;
+        min-height: 335px;
+        text-align: center;
+        min-width: 220px; }
+      /* line 54, ../scss/page-templates/apply-blocks/_apply-block.scss */
+      body.benefit-page ul.apply-block li.preferred {
+        background: white;
+        border-color: #d9d9d9;
+        margin: 0px;
+        min-height: 340px;
+        padding-bottom: 50px;
+        width: 36%; }
+        /* line 62, ../scss/page-templates/apply-blocks/_apply-block.scss */
+        body.benefit-page ul.apply-block li.preferred p {
+          text-align: center;
+          margin-top: 15px;
+          width: 70%; }
+        /* line 70, ../scss/page-templates/apply-blocks/_apply-block.scss */
+        body.benefit-page ul.apply-block li.preferred .vae-button {
+          padding-left: 40px;
+          padding-right: 40px;
+          margin-top: 22px;
+          margin-bottom: 0px; }
+        /* line 78, ../scss/page-templates/apply-blocks/_apply-block.scss */
+        body.benefit-page ul.apply-block li.preferred h4 {
+          font-size: 2.0625em; }
+      /* line 88, ../scss/page-templates/apply-blocks/_apply-block.scss */
+      body.benefit-page ul.apply-block li.shadowed-40 {
+        background-image: url(../images/shadow-40.png);
+        background-position: -43px top;
+        background-repeat: no-repeat;
+        border-right-color: transparent;
+        border-left: 0px solid silver; }
+      /* line 99, ../scss/page-templates/apply-blocks/_apply-block.scss */
+      body.benefit-page ul.apply-block li p {
+        width: 70%;
+        text-align: left;
+        margin-left: 0;
+        zoom: 1;
+        margin: 0;
+        display: inline-block;
+        *display: inline;
+        *vertical-align: auto;
+        *zoom: 1;
+        *display: block; }
+        /* line 108, ../scss/page-templates/apply-blocks/_apply-block.scss */
+        body.benefit-page ul.apply-block li p a {
+          white-space: nowrap; }
+      /* line 116, ../scss/page-templates/apply-blocks/_apply-block.scss */
+      body.benefit-page ul.apply-block li p.grabber {
+        width: 100%;
+        position: absolute;
+        background-color: #FDEFCA;
+        bottom: 0;
+        left: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.375em;
+        line-height: 2.25em; }
+      /* line 128, ../scss/page-templates/apply-blocks/_apply-block.scss */
+      body.benefit-page ul.apply-block li a.vae-button {
+        margin: 15px 30px; }
+      /* line 133, ../scss/page-templates/apply-blocks/_apply-block.scss */
+      body.benefit-page ul.apply-block li img {
+        clear: both;
+        margin: 0; }
+      /* line 138, ../scss/page-templates/apply-blocks/_apply-block.scss */
+      body.benefit-page ul.apply-block li h4 {
+        margin: 20px 0 20px 0;
+        text-align: center;
+        font-family: "myriad-pro-n4","myriad-pro",sans-serif;
+        font-style: normal;
+        font-weight: 400; }
+        /* line 147, ../scss/page-templates/apply-blocks/_apply-block.scss */
+        body.benefit-page ul.apply-block li h4 span {
+          font-family: "myriad-pro-n3","myriad-pro",sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          letter-spacing: 3px;
+          *line-height: 18px;
+          vertical-align: middle;
+          text-transform: uppercase; }
+  /* line 8, ../scss/page-templates/apply-blocks/_apply-block_education.scss */
+  body.benefit-page.benefit-education ul.apply-block li.or-1, body.benefit-page.benefit-education ul.apply-block li.or-2, body.benefit-page.benefit-education ul.apply-block li.or-3 {
+    left: 25.5%; }
+  /* line 11, ../scss/page-templates/apply-blocks/_apply-block_education.scss */
+  body.benefit-page.benefit-education ul.apply-block li.or-2 {
+    background: #ebece8;
+    left: 49.0%;
+    *left: 49.5%; }
+  /* line 16, ../scss/page-templates/apply-blocks/_apply-block_education.scss */
+  body.benefit-page.benefit-education ul.apply-block li.or-3 {
+    background: #ebece8;
+    left: 72.0%;
+    *left: 72.0%; }
+  /* line 22, ../scss/page-templates/apply-blocks/_apply-block_education.scss */
+  body.benefit-page.benefit-education ul.apply-block li.apply-option {
+    width: 23%; }
+  /* line 28, ../scss/page-templates/apply-blocks/_apply-block_education.scss */
+  body.benefit-page.benefit-education ul.apply-block li.preferred {
+    width: 28%;
+    min-width: 220px;
+    height: 360px; }
+  /* line 38, ../scss/page-templates/apply-blocks/_apply-block_education.scss */
+  body.benefit-page.benefit-education ul.apply-block li.type-2 {
+    border-right: none; }
+  /* line 42, ../scss/page-templates/apply-blocks/_apply-block_education.scss */
+  body.benefit-page.benefit-education ul.apply-block li p {
+    line-height: 1.3em; }
+  /* line 7, ../scss/page-templates/apply-blocks/_apply-block_home-loans.scss */
+  body.benefit-page.benefit-home-loans ul.apply-block p {
+    font-size: 15.5px; }
+  /* line 12, ../scss/page-templates/apply-blocks/_apply-block_home-loans.scss */
+  body.benefit-page.benefit-home-loans ul.apply-block li {
+    list-style-type: none; }
+  /* line 7, ../scss/page-templates/apply-blocks/_apply-block_employment.scss */
+  body.benefit-page.benefit-employment ul.apply-block p {
+    font-size: 16px;
+    line-height: 1.4em; }
+  /* line 13, ../scss/page-templates/apply-blocks/_apply-block_employment.scss */
+  body.benefit-page.benefit-employment ul.apply-block li {
+    list-style-type: none;
+    margin-top: 2.6em; }
+    /* line 18, ../scss/page-templates/apply-blocks/_apply-block_employment.scss */
+    body.benefit-page.benefit-employment ul.apply-block li.apply-employment-resources {
+      text-align: center;
+      width: 100%;
+      *margin-left: 25%;
+      display: inline-block;
+      vertical-align: middle; }
+      /* line 27, ../scss/page-templates/apply-blocks/_apply-block_employment.scss */
+      body.benefit-page.benefit-employment ul.apply-block li.apply-employment-resources .wrapper {
+        width: 47%;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        padding-bottom: 15px; }
+      /* line 38, ../scss/page-templates/apply-blocks/_apply-block_employment.scss */
+      body.benefit-page.benefit-employment ul.apply-block li.apply-employment-resources a.vae-button {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+        margin: 0; }
+      /* line 47, ../scss/page-templates/apply-blocks/_apply-block_employment.scss */
+      body.benefit-page.benefit-employment ul.apply-block li.apply-employment-resources:before, body.benefit-page.benefit-employment ul.apply-block li.apply-employment-resources:after {
+        content: " ";
+        width: 8%;
+        margin-left: 2%;
+        margin-right: 2%;
+        height: 1px;
+        background-color: #c7c9be;
+        display: inline-block;
+        vertical-align: middle; }
+      /* line 58, ../scss/page-templates/apply-blocks/_apply-block_employment.scss */
+      body.benefit-page.benefit-employment ul.apply-block li.apply-employment-resources h3 {
+        margin: 0;
+        margin-bottom: .15em; }
+      /* line 64, ../scss/page-templates/apply-blocks/_apply-block_employment.scss */
+      body.benefit-page.benefit-employment ul.apply-block li.apply-employment-resources p {
+        width: 100%;
+        font-size: 1.125em; }
+  /* line 7, ../scss/page-templates/apply-blocks/_apply-block_pensions.scss */
+  body.benefit-page .pension-apply-intro {
+    margin: 3% 6% 1% 6%;
+    width: 88%; }
+  /* line 15, ../scss/page-templates/apply-blocks/_apply-block_pensions.scss */
+  body.benefit-page.benefit-pensions ul.apply-block {
+    text-align: left;
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+    padding: 0;
+    background: white;
+    border: 1px solid #c7c9be; }
+    /* line 26, ../scss/page-templates/apply-blocks/_apply-block_pensions.scss */
+    body.benefit-page.benefit-pensions ul.apply-block p {
+      font-size: 15.5px; }
+    /* line 31, ../scss/page-templates/apply-blocks/_apply-block_pensions.scss */
+    body.benefit-page.benefit-pensions ul.apply-block li {
+      vertical-align: top;
+      padding-bottom: 2em; }
+      /* line 35, ../scss/page-templates/apply-blocks/_apply-block_pensions.scss */
+      body.benefit-page.benefit-pensions ul.apply-block li.apply-divider {
+        background: url(../images/bg-apply-divider.png) right 110% no-repeat; }
+      /* line 39, ../scss/page-templates/apply-blocks/_apply-block_pensions.scss */
+      body.benefit-page.benefit-pensions ul.apply-block li.apply-option {
+        border: none;
+        width: 33.3%;
+        *width: 33.15%;
+        background-color: transparent;
+        min-height: 380px; }
+      /* line 48, ../scss/page-templates/apply-blocks/_apply-block_pensions.scss */
+      body.benefit-page.benefit-pensions ul.apply-block li p {
+        width: 64%; }
+      /* line 53, ../scss/page-templates/apply-blocks/_apply-block_pensions.scss */
+      body.benefit-page.benefit-pensions ul.apply-block li h4 {
+        font-size: 1.375em;
+        min-height: 50px; }
+        /* line 57, ../scss/page-templates/apply-blocks/_apply-block_pensions.scss */
+        body.benefit-page.benefit-pensions ul.apply-block li h4 span {
+          display: block;
+          margin-top: -.3em;
+          font-size: 18px;
+          letter-spacing: 0px;
+          text-transform: none; }
+  /* line 13, ../scss/page-templates/apply-blocks/_apply-block_health-care.scss */
+  body.benefit-page.benefit-health-care ul.apply-block li.or-1, body.benefit-page.benefit-health-care ul.apply-block li.or-2, body.benefit-page.benefit-health-care ul.apply-block li.or-3 {
+    left: 25.5%; }
+  /* line 16, ../scss/page-templates/apply-blocks/_apply-block_health-care.scss */
+  body.benefit-page.benefit-health-care ul.apply-block li.or-2 {
+    background: #ebece8;
+    left: 49.0%;
+    *left: 49.5%; }
+  /* line 21, ../scss/page-templates/apply-blocks/_apply-block_health-care.scss */
+  body.benefit-page.benefit-health-care ul.apply-block li.or-3 {
+    background: #ebece8;
+    left: 72.0%;
+    *left: 72.0%; }
+  /* line 27, ../scss/page-templates/apply-blocks/_apply-block_health-care.scss */
+  body.benefit-page.benefit-health-care ul.apply-block li.apply-option {
+    width: 23%; }
+  /* line 33, ../scss/page-templates/apply-blocks/_apply-block_health-care.scss */
+  body.benefit-page.benefit-health-care ul.apply-block li.preferred {
+    width: 28%;
+    min-width: 220px;
+    height: 360px; }
+    /* line 37, ../scss/page-templates/apply-blocks/_apply-block_health-care.scss */
+    body.benefit-page.benefit-health-care ul.apply-block li.preferred p {
+      width: 100%; }
+  /* line 43, ../scss/page-templates/apply-blocks/_apply-block_health-care.scss */
+  body.benefit-page.benefit-health-care ul.apply-block li.type-2 {
+    border-right: none; }
+  /* line 47, ../scss/page-templates/apply-blocks/_apply-block_health-care.scss */
+  body.benefit-page.benefit-health-care ul.apply-block li p {
+    line-height: 1.3em; }
+  /* line 17, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content .col-sidebar {
+    padding-top: 95px;
+    padding-bottom: 30px; }
+  /* line 22, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content h3 {
+    margin-top: 25px;
+    margin-bottom: 36px; }
+  /* line 31, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content p {
+    margin-bottom: 1em;
+    clear: both; }
+  /* line 40, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content .gutter, body.benefit-page .row-content .row-banner .explore-nav .va-explore-megamenu .menu-panel .wrapper, .row-banner .explore-nav .va-explore-megamenu .menu-panel body.benefit-page .row-content .wrapper {
+    padding: 20px; }
+  /* line 44, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content h3.resources-header {
+    background: url(../images/sprite-resource-header.png) left center no-repeat;
+    padding-left: 38px;
+    margin-bottom: .3em; }
+  /* line 51, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content h5.resources-header {
+    font-size: 16px;
+    white-space: nowrap;
+    font-family: "myriad-pro-n4","myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400; }
+    /* line 56, ../scss/page-templates/_benefit-section-template.scss */
+    body.benefit-page .row-content h5.resources-header span {
+      display: inline-block;
+      *display: inline;
+      *vertical-align: auto;
+      *zoom: 1;
+      border-bottom: 1px solid #cdcecd;
+      width: 100%;
+      margin-left: 5px;
+      height: 1px;
+      vertical-align: middle; }
+  /* line 68, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content ul.requirements {
+    float: left;
+    width: 100%;
+    clear: both; }
+    /* line 73, ../scss/page-templates/_benefit-section-template.scss */
+    body.benefit-page .row-content ul.requirements li {
+      display: inline-block;
+      *display: inline;
+      *vertical-align: auto;
+      *zoom: 1;
+      background: url(../images/icon-check-circle.png) left 3px no-repeat; }
+      /* line 80, ../scss/page-templates/_benefit-section-template.scss */
+      body.benefit-page .row-content ul.requirements li ul {
+        list-style-type: disc;
+        list-style-position: outside;
+        margin-top: -.5em;
+        margin-left: 2em;
+        padding-left: 0; }
+        /* line 87, ../scss/page-templates/_benefit-section-template.scss */
+        body.benefit-page .row-content ul.requirements li ul li {
+          display: list-item;
+          background: none;
+          padding: 0;
+          margin-left: 25px; }
+          /* line 93, ../scss/page-templates/_benefit-section-template.scss */
+          body.benefit-page .row-content ul.requirements li ul li p {
+            margin-bottom: .65em;
+            margin-left: 0; }
+      /* line 103, ../scss/page-templates/_benefit-section-template.scss */
+      body.benefit-page .row-content ul.requirements li p {
+        margin-left: 40px;
+        margin-right: 40px; }
+  /* line 115, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content .explore-link-wrap {
+    float: left;
+    width: 100%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em; }
+  /* line 124, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content ul.resources {
+    clear: both;
+    float: left;
+    width: 100%; }
+    /* line 134, ../scss/page-templates/_benefit-section-template.scss */
+    body.benefit-page .row-content ul.resources li {
+      margin-left: 3%;
+      margin-bottom: 15px; }
+      /* line 138, ../scss/page-templates/_benefit-section-template.scss */
+      body.benefit-page .row-content ul.resources li span {
+        display: block;
+        max-width: 48%;
+        vertical-align: top;
+        margin-left: 2%;
+        float: right;
+        text-indent: -.7em;
+        color: #7e828f;
+        line-height: 1.3em; }
+        /* line 148, ../scss/page-templates/_benefit-section-template.scss */
+        body.benefit-page .row-content ul.resources li span:before {
+          content: "\2013 \0020"; }
+      /* line 156, ../scss/page-templates/_benefit-section-template.scss */
+      body.benefit-page .row-content ul.resources li a {
+        display: inline-block;
+        *display: inline;
+        *vertical-align: auto;
+        *zoom: 1;
+        padding-right: 20px;
+        background: url(../images/sprite-resources.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        color: #1981b8;
+        width: auto; }
+        /* line 166, ../scss/page-templates/_benefit-section-template.scss */
+        body.benefit-page .row-content ul.resources li a:link, body.benefit-page .row-content ul.resources li a:active, body.benefit-page .row-content ul.resources li a:visited {
+          text-decoration: underline; }
+      /* line 173, ../scss/page-templates/_benefit-section-template.scss */
+      body.benefit-page .row-content ul.resources li ul li {
+        background: none; }
+  /* line 184, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content ul.file-downloads li a {
+    background-position-y: 0px; }
+  /* line 189, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content ul.locations li a {
+    background-position-y: -50px; }
+    /* line 191, ../scss/page-templates/_benefit-section-template.scss */
+    body.benefit-page .row-content ul.locations li a.va-regional-offices {
+      padding-top: 115px;
+      background: url(../images/bg-location-link.png) center top no-repeat;
+      width: 100%; }
+  /* line 200, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content ul.outbound-links li a {
+    background-position-y: -100px;
+    padding-right: 15px; }
+  /* line 205, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content ul.phone-numbers li a {
+    background-position-y: -200px; }
+  /* line 209, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content ul.fax-numbers li a {
+    background-position-y: -250px; }
+  /* line 213, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content ul.chat-support li a {
+    background-position-y: -150px; }
+  /* line 216, ../scss/page-templates/_benefit-section-template.scss */
+  body.benefit-page .row-content ul.how-tos li a {
+    background-position-y: -300px; }
+
+/* ====== begin testimonial ===== */
+/* line 267, ../scss/page-templates/_benefit-section-template.scss */
+.testimonial {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  overflow: hidden; }
+  /* line 272, ../scss/page-templates/_benefit-section-template.scss */
+  .testimonial h3 {
+    text-indent: -9999px; }
+  /* line 276, ../scss/page-templates/_benefit-section-template.scss */
+  .testimonial p {
+    margin-left: 20px;
+    margin-right: 20px; }
+  /* line 281, ../scss/page-templates/_benefit-section-template.scss */
+  .testimonial p.caption {
+    margin-bottom: 20px; }
+  /* line 285, ../scss/page-templates/_benefit-section-template.scss */
+  #content .testimonial p.attribution {
+    text-align: right;
+    line-height: 1.375em; }
+  /* line 290, ../scss/page-templates/_benefit-section-template.scss */
+  .testimonial .inset {
+    border: 1px solid #bec2c0;
+    overflow: hidden;
+    background-color: white;
+    min-width: 275px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: block; }
+  /* line 301, ../scss/page-templates/_benefit-section-template.scss */
+  .testimonial .gutter, .testimonial .row-banner .explore-nav .va-explore-megamenu .menu-panel .wrapper, .row-banner .explore-nav .va-explore-megamenu .menu-panel .testimonial .wrapper {
+    padding: 20px;
+    overflow: hidden;
+    width: auto; }
+  /* line 307, ../scss/page-templates/_benefit-section-template.scss */
+  .testimonial a.video-testimonial {
+    margin-bottom: 20px;
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1; }
+
+/* ====== end testimonial ===== */
+/* === begin @apply-secondary ==== */
+/* line 329, ../scss/page-templates/_benefit-section-template.scss */
+.apply-secondary {
+  margin-top: 60px;
+  margin-bottom: 20px; }
+  /* line 335, ../scss/page-templates/_benefit-section-template.scss */
+  .apply-secondary .decoration {
+    width: 34%;
+    margin-left: 2%;
+    margin-right: 2%;
+    *margin-right: 1.7%;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    position: relative;
+    border-bottom: 2px solid #e3e4e7;
+    height: 1px;
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    margin-top: 20px; }
+  /* line 345, ../scss/page-templates/_benefit-section-template.scss */
+  .apply-secondary .call-to-action {
+    width: 19.9%;
+    margin-left: 2%;
+    margin-right: 2%;
+    *margin-right: 1.7%;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    text-align: center; }
+    /* line 351, ../scss/page-templates/_benefit-section-template.scss */
+    .apply-secondary .call-to-action a.vae-button {
+      margin-bottom: 15px; }
+
+/* === end apply secondary ==== */
+/* line 5, ../scss/page-templates/_share-portal.scss */
+body.share-portal .intro h1 {
+  margin-top: 1.3em !important;
+  margin-bottom: 1em !important;
+  font-size: 3.625em; }
+/* line 11, ../scss/page-templates/_share-portal.scss */
+body.share-portal .mini-nav {
+  margin-bottom: 1.3em;
+  display: none; }
+/* line 16, ../scss/page-templates/_share-portal.scss */
+body.share-portal .share-video {
+  display: none; }
+/* line 24, ../scss/page-templates/_share-portal.scss */
+body.share-portal .share-grid h3 {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  margin-top: 1em;
+  margin-bottom: 1.33em;
+  line-height: 1.33em;
+  clear: both; }
+  /* line 36, ../scss/page-templates/_share-portal.scss */
+  body.share-portal .share-grid h3 span {
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    padding-right: 100%;
+    margin-left: 10px;
+    border-bottom: 1px solid #bec2c0;
+    content: " "; }
+/* line 47, ../scss/page-templates/_share-portal.scss */
+body.share-portal .share-grid ul.share-content {
+  width: 100%;
+  overflow: hidden; }
+  /* line 51, ../scss/page-templates/_share-portal.scss */
+  body.share-portal .share-grid ul.share-content > li {
+    min-width: 200px;
+    background: white;
+    margin-bottom: 30px;
+    border: 1px solid silver;
+    position: relative;
+    padding-bottom: 35px;
+    overflow: hidden;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+    /* line 62, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.share-content > li .item-title {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 6%; }
+    /* line 68, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.share-content > li .share-trigger {
+      position: absolute;
+      bottom: 7px;
+      right: 15px; }
+  /* line 82, ../scss/page-templates/_share-portal.scss */
+  body.share-portal .share-grid ul.share-content.share-text > li {
+    min-height: 130px;
+    *min-height: 80px;
+    padding-top: 10px; }
+    /* line 90, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.share-content.share-text > li h6 {
+      width: 85%;
+      margin-left: 7.5%;
+      margin-bottom: 15px;
+      color: #94969a;
+      text-align: center;
+      display: none; }
+    /* line 101, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.share-content.share-text > li p {
+      white-space: normal;
+      overflow: visible;
+      width: 85%;
+      margin-left: 7.5%;
+      margin-top: 10px;
+      position: relative;
+      font-weight: normal; }
+      /* line 109, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.share-content.share-text > li p:before {
+        content: '\201c';
+        font-size: 150%;
+        padding-right: 3px;
+        margin-left: -13px;
+        color: #bec2c0;
+        font-weight: normal; }
+      /* line 120, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.share-content.share-text > li p:after {
+        font-weight: normal;
+        content: '\201d';
+        color: #bec2c0;
+        font-size: 110%;
+        bottom: 0;
+        right: 0; }
+    /* line 132, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.share-content.share-text > li ul.share-panel {
+      padding-top: 15px; }
+/* line 155, ../scss/page-templates/_share-portal.scss */
+body.share-portal .share-grid ul.share-panel {
+  position: absolute;
+  display: block;
+  background: rgba(231, 230, 226, 0.9);
+  height: 100%;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  padding-top: 35%;
+  text-align: center;
+  transition: top 0.6s cubic-bezier(0.74, 0.02, 0.24, 0.85); }
+  /* line 167, ../scss/page-templates/_share-portal.scss */
+  body.share-portal .share-grid ul.share-panel.show-share-panel {
+    top: 0px; }
+  /* line 171, ../scss/page-templates/_share-portal.scss */
+  body.share-portal .share-grid ul.share-panel > li {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    width: 28%;
+    margin-right: 1%;
+    margin-left: 1%;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: transparent url(../images/sprite-social-hub-share-icons.png) center 25px no-repeat;
+    transition: background-position-y 0.4s cubic-bezier(0.06, -1.01, 0.81, 1.54), background-color 0.33s linear; }
+    /* line 182, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.share-panel > li:after {
+      position: absolute;
+      top: 36px;
+      left: 40%;
+      display: none; }
+    /* line 190, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.share-panel > li:hover {
+      background-position-y: 10px;
+      background-color: white; }
+      /* line 194, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.share-panel > li:hover:after {
+        display: block; }
+    /* line 200, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.share-panel > li.share-facebook a {
+      background-color: #39629c; }
+    /* line 203, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.share-panel > li.share-facebook:after {
+      border-bottom-color: #39629c; }
+    /* line 207, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.share-panel > li.share-twitter {
+      background-position-y: -70px; }
+      /* line 209, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.share-panel > li.share-twitter a {
+        background-color: #37a9dd; }
+      /* line 212, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.share-panel > li.share-twitter:after {
+        border-bottom-color: #37a9dd; }
+      /* line 215, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.share-panel > li.share-twitter:hover {
+        background-position-y: -88px; }
+    /* line 219, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.share-panel > li.share-pinterest {
+      background-position-y: -175px; }
+      /* line 221, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.share-panel > li.share-pinterest a {
+        background-color: #c71c2b; }
+      /* line 224, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.share-panel > li.share-pinterest:after {
+        border-bottom-color: #c71c2b; }
+      /* line 227, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.share-panel > li.share-pinterest:hover {
+        background-position-y: -190px; }
+    /* line 237, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.share-panel > li a {
+      display: inline-block;
+      width: 100%;
+      margin-top: 50px;
+      background: blue;
+      text-align: center;
+      line-height: 200%;
+      color: white;
+      text-decoration: none;
+      -moz-border-radius-bottomright: 4px;
+      -moz-border-radius-bottomleft: 4px;
+      -webkit-border-bottom-right-radius: 4px;
+      -webkit-border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-bottom-left-radius: 4px; }
+/* line 256, ../scss/page-templates/_share-portal.scss */
+body.share-portal .share-grid ul.document-gallery {
+  margin-top: 30px; }
+  /* line 259, ../scss/page-templates/_share-portal.scss */
+  body.share-portal .share-grid ul.document-gallery li {
+    min-width: 210px;
+    margin-bottom: 20px; }
+    /* line 264, ../scss/page-templates/_share-portal.scss */
+    body.share-portal .share-grid ul.document-gallery li a {
+      display: block;
+      padding-left: 80px;
+      font-size: 1.3125em;
+      background: url(../images/sprite-documents-large.png) left top no-repeat;
+      min-height: 90px; }
+      /* line 272, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.document-gallery li a:hover {
+        background-position-y: -500px; }
+      /* line 278, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.document-gallery li a.doc-jpg {
+        background-position-x: -500px; }
+      /* line 281, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.document-gallery li a.doc-pdf {
+        background-position-x: -1000px; }
+      /* line 284, ../scss/page-templates/_share-portal.scss */
+      body.share-portal .share-grid ul.document-gallery li a.doc-png {
+        background-position-x: -1500px; }
+
+/* ==== end @share-portal ===== */
+/* ==== begin @video page ===== */
+/* line 11, ../scss/page-templates/_video-page.scss */
+body.video-page .intro {
+  margin-bottom: 1.3em; }
+/* line 15, ../scss/page-templates/_video-page.scss */
+body.video-page .videos li {
+  background-color: red; }
+/* line 19, ../scss/page-templates/_video-page.scss */
+body.video-page .video-nav-bar {
+  background-color: #ebece8;
+  margin-bottom: 2.6em;
+  border-radius: 5px; }
+  /* line 26, ../scss/page-templates/_video-page.scss */
+  body.video-page .video-nav-bar h5 {
+    margin: 0 30px;
+    padding: 15px 0;
+    display: inline-block;
+    *display: inline;
+    *vertical-align: auto;
+    *zoom: 1;
+    vertical-align: middle; }
+/* line 35, ../scss/page-templates/_video-page.scss */
+body.video-page ul.video-nav {
+  display: inline-block;
+  *display: inline;
+  *vertical-align: auto;
+  *zoom: 1;
+  vertical-align: middle;
+  width: 60%; }
+  /* line 40, ../scss/page-templates/_video-page.scss */
+  body.video-page ul.video-nav li {
+    display: inline-block;
+    margin: 0 30px;
+    float: left;
+    max-width: 150px; }
+
+/* line 54, ../scss/page-templates/_video-page.scss */
+ul.videos li {
+  display: block;
+  float: left;
+  width: 22%;
+  margin-right: 3%;
+  *margin-right: 2.7%;
+  margin-left: 0%;
+  min-width: 200px;
+  margin-bottom: 30px;
+  position: relative; }
+  /* line 66, ../scss/page-templates/_video-page.scss */
+  ul.videos li a {
+    display: block;
+    position: relative;
+    border: 1px solid silver; }
+    /* line 70, ../scss/page-templates/_video-page.scss */
+    ul.videos li a:after {
+      content: "";
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      background: url(../images/icon-video-play.png) no-repeat;
+      z-index: 5;
+      bottom: 3px;
+      right: 3px; }
+    /* line 81, ../scss/page-templates/_video-page.scss */
+    ul.videos li a img {
+      width: 100%; }
+  /* line 88, ../scss/page-templates/_video-page.scss */
+  ul.videos li h4 {
+    margin: 10px 0 0 0; }
+  /* line 92, ../scss/page-templates/_video-page.scss */
+  ul.videos li p {
+    margin: 0; }
+
+/* ===== END video page ==== */
+/* line 6, ../scss/page-templates/_generic-page.scss */
+body.generic-page .intro h1 {
+  margin-top: .7em;
+  margin-bottom: 1.3em;
+  font-size: 3.625em; }
+/* line 12, ../scss/page-templates/_generic-page.scss */
+body.generic-page .intro p {
+  width: 44.5em; }
+
+/* ====== BEGIN @Benfits-Navigator =======*/
+/* line 9, ../scss/page-templates/_benefits-navigator.scss */
+.benefit-navigator .row-survey .main, .benefit-navigator #survey .main {
+  max-width: 54.5em; }
+/* line 13, ../scss/page-templates/_benefits-navigator.scss */
+.benefit-navigator .row-survey .wrapper, .benefit-navigator #survey .wrapper {
+  margin-top: 20px;
+  background: white;
+  border: 1px solid #bec2c0;
+  overflow: hidden; }
+  /* line 22, ../scss/page-templates/_benefits-navigator.scss */
+  .benefit-navigator .row-survey .wrapper .inset, .benefit-navigator #survey .wrapper .inset {
+    overflow: hidden;
+    padding: 20px 10% 20px 10%; }
+  /* line 29, ../scss/page-templates/_benefits-navigator.scss */
+  .benefit-navigator .row-survey .wrapper h4, .benefit-navigator #survey .wrapper h4 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    line-height: 1.22em;
+    font-size: 1.25em;
+    font-family: "myriad-pro-n4","myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400; }
+  /* line 38, ../scss/page-templates/_benefits-navigator.scss */
+  .benefit-navigator .row-survey .wrapper .question-wrapper, .benefit-navigator #survey .wrapper .question-wrapper {
+    margin-bottom: 60px; }
+  /* line 43, ../scss/page-templates/_benefits-navigator.scss */
+  .benefit-navigator .row-survey .wrapper h5.path-title, .benefit-navigator #survey .wrapper h5.path-title {
+    margin-top: 0px;
+    text-align: center; }
+  /* line 48, ../scss/page-templates/_benefits-navigator.scss */
+  .benefit-navigator .row-survey .wrapper p.question-id, .benefit-navigator #survey .wrapper p.question-id {
+    color: #74777f; }
+  /* line 51, ../scss/page-templates/_benefits-navigator.scss */
+  .benefit-navigator .row-survey .wrapper p.prompt, .benefit-navigator #survey .wrapper p.prompt {
+    color: #1981b8;
+    border-bottom: 1px solid silver;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  /* line 63, ../scss/page-templates/_benefits-navigator.scss */
+  .benefit-navigator .row-survey .wrapper label, .benefit-navigator #survey .wrapper label {
+    clear: right; }
+  /* line 66, ../scss/page-templates/_benefits-navigator.scss */
+  .benefit-navigator .row-survey .wrapper legend, .benefit-navigator #survey .wrapper legend {
+    display: none; }
+  /* line 70, ../scss/page-templates/_benefits-navigator.scss */
+  .benefit-navigator .row-survey .wrapper .survey-nav, .benefit-navigator #survey .wrapper .survey-nav {
+    border-top: 1px dotted #d8dbda;
+    float: left;
+    width: 100%; }
+    /* line 76, ../scss/page-templates/_benefits-navigator.scss */
+    .benefit-navigator .row-survey .wrapper .survey-nav li, .benefit-navigator #survey .wrapper .survey-nav li {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      /* line 77, ../scss/page-templates/_benefits-navigator.scss */
+      .benefit-navigator .row-survey .wrapper .survey-nav li.back, .benefit-navigator .row-survey .wrapper .survey-nav li.save, .benefit-navigator #survey .wrapper .survey-nav li.back, .benefit-navigator #survey .wrapper .survey-nav li.save {
+        width: 34%;
+        margin-left: 3%;
+        margin-right: 3%;
+        *margin-right: 2.55%;
+        padding-left: 0;
+        padding-right: 0;
+        float: left;
+        position: relative; }
+      /* line 80, ../scss/page-templates/_benefits-navigator.scss */
+      .benefit-navigator .row-survey .wrapper .survey-nav li.save, .benefit-navigator #survey .wrapper .survey-nav li.save {
+        text-align: right; }
+      /* line 83, ../scss/page-templates/_benefits-navigator.scss */
+      .benefit-navigator .row-survey .wrapper .survey-nav li.progress, .benefit-navigator #survey .wrapper .survey-nav li.progress {
+        text-align: center;
+        width: 18%;
+        margin-left: 1%;
+        margin-right: 1%;
+        *margin-right: 0.85%;
+        padding-left: 0;
+        padding-right: 0;
+        float: left;
+        position: relative; }
+/* line 101, ../scss/page-templates/_benefits-navigator.scss */
+.benefit-navigator .row-benefits-teaser .main, .benefit-navigator .row-banner .main, .benefit-navigator #banner .main {
+  max-width: 44.5em; }
+/* line 105, ../scss/page-templates/_benefits-navigator.scss */
+.benefit-navigator .row-benefits-teaser h3, .benefit-navigator .row-banner h3, .benefit-navigator #banner h3 {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+/* line 110, ../scss/page-templates/_benefits-navigator.scss */
+.benefit-navigator .row-benefits-teaser ul.benefit-teasers, .benefit-navigator .row-banner ul.benefit-teasers, .benefit-navigator #banner ul.benefit-teasers {
+  margin-bottom: 70px; }
+  /* line 114, ../scss/page-templates/_benefits-navigator.scss */
+  .benefit-navigator .row-benefits-teaser ul.benefit-teasers li, .benefit-navigator .row-banner ul.benefit-teasers li, .benefit-navigator #banner ul.benefit-teasers li {
+    padding-left: 80px;
+    background: url(../images/sprite-benefit-icons-50w.png) left top no-repeat;
+    margin-bottom: 20px;
+    min-height: 60px; }
+    /* line 121, ../scss/page-templates/_benefits-navigator.scss */
+    .benefit-navigator .row-benefits-teaser ul.benefit-teasers li.bt-disability, .benefit-navigator .row-banner ul.benefit-teasers li.bt-disability, .benefit-navigator #banner ul.benefit-teasers li.bt-disability {
+      background-position: left -5px; }
+    /* line 124, ../scss/page-templates/_benefits-navigator.scss */
+    .benefit-navigator .row-benefits-teaser ul.benefit-teasers li.bt-education, .benefit-navigator .row-banner ul.benefit-teasers li.bt-education, .benefit-navigator #banner ul.benefit-teasers li.bt-education {
+      background-position: left -125px; }
+    /* line 127, ../scss/page-templates/_benefits-navigator.scss */
+    .benefit-navigator .row-benefits-teaser ul.benefit-teasers li.bt-employment, .benefit-navigator .row-banner ul.benefit-teasers li.bt-employment, .benefit-navigator #banner ul.benefit-teasers li.bt-employment {
+      background-position: left -250px; }
+    /* line 130, ../scss/page-templates/_benefits-navigator.scss */
+    .benefit-navigator .row-benefits-teaser ul.benefit-teasers li.bt-health-care, .benefit-navigator .row-banner ul.benefit-teasers li.bt-health-care, .benefit-navigator #banner ul.benefit-teasers li.bt-health-care {
+      background-position: left -375px; }
+    /* line 133, ../scss/page-templates/_benefits-navigator.scss */
+    .benefit-navigator .row-benefits-teaser ul.benefit-teasers li.bt-home-loans, .benefit-navigator .row-banner ul.benefit-teasers li.bt-home-loans, .benefit-navigator #banner ul.benefit-teasers li.bt-home-loans {
+      background-position: left -500px; }
+    /* line 136, ../scss/page-templates/_benefits-navigator.scss */
+    .benefit-navigator .row-benefits-teaser ul.benefit-teasers li.bt-life-insurance, .benefit-navigator .row-banner ul.benefit-teasers li.bt-life-insurance, .benefit-navigator #banner ul.benefit-teasers li.bt-life-insurance {
+      background-position: left -625px; }
+    /* line 139, ../scss/page-templates/_benefits-navigator.scss */
+    .benefit-navigator .row-benefits-teaser ul.benefit-teasers li.bt-memorial-benefits, .benefit-navigator .row-banner ul.benefit-teasers li.bt-memorial-benefits, .benefit-navigator #banner ul.benefit-teasers li.bt-memorial-benefits {
+      background-position: left -750px; }
+    /* line 142, ../scss/page-templates/_benefits-navigator.scss */
+    .benefit-navigator .row-benefits-teaser ul.benefit-teasers li.bt-pensions, .benefit-navigator .row-banner ul.benefit-teasers li.bt-pensions, .benefit-navigator #banner ul.benefit-teasers li.bt-pensions {
+      background-position: left -870px; }
+    /* line 145, ../scss/page-templates/_benefits-navigator.scss */
+    .benefit-navigator .row-benefits-teaser ul.benefit-teasers li.bt-dependents, .benefit-navigator .row-banner ul.benefit-teasers li.bt-dependents, .benefit-navigator #banner ul.benefit-teasers li.bt-dependents {
+      background-position: left -989px; }
+
+/* === Begin benefits-navigator-landing-page.scss ==== */
+/* line 8, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+.benefits-navigator-landing .row.row-banner {
+  background: #edede4 url(../images/image-bnAD-map.png) center bottom no-repeat; }
+  /* line 15, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+  .benefits-navigator-landing .row.row-banner .main {
+    height: 190px; }
+  /* line 19, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+  .benefits-navigator-landing .row.row-banner .intro {
+    text-align: center; }
+    /* line 21, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+    .benefits-navigator-landing .row.row-banner .intro img {
+      margin-top: 30px;
+      display: inline-block;
+      *display: inline;
+      *vertical-align: auto;
+      *zoom: 1; }
+/* line 31, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+.benefits-navigator-landing .row.row-content .main {
+  width: 52.5em;
+  text-align: center; }
+  /* line 36, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+  .benefits-navigator-landing .row.row-content .main h3.welcome {
+    margin-top: 38px;
+    margin-bottom: 38px; }
+  /* line 42, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+  .benefits-navigator-landing .row.row-content .main p {
+    text-align: left;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 1.3em; }
+  /* line 50, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+  .benefits-navigator-landing .row.row-content .main h4.expressive {
+    font-size: 48px;
+    line-height: .5em;
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    -webkit-font-smoothing: antialiased; }
+  /* line 58, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+  .benefits-navigator-landing .row.row-content .main h5 {
+    font-size: 22px;
+    margin-bottom: 45px; }
+/* line 75, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+.benefits-navigator-landing .row.row-content .main fieldset.benefit-survey-doors input[type="radio"] {
+  position: absolute;
+  left: -9999px; }
+/* line 82, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+.benefits-navigator-landing .row.row-content .main fieldset.benefit-survey-doors label {
+  width: 22%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  *margin-right: 1.275%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  position: relative;
+  display: block;
+  background: url(../images/sprite-circle-checkbox.png) center -400px no-repeat;
+  cursor: pointer; }
+  /* line 90, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+  .benefits-navigator-landing .row.row-content .main fieldset.benefit-survey-doors label span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: "myriad-pro-n4","myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    width: 100%;
+    color: #52555f; }
+  /* line 105, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+  .benefits-navigator-landing .row.row-content .main fieldset.benefit-survey-doors label:hover, .benefits-navigator-landing .row.row-content .main fieldset.benefit-survey-doors label.selected {
+    background-position: center 97px;
+    cursor: pointer; }
+/* line 113, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+.benefits-navigator-landing .row.row-content .main fieldset.benefit-survey-doors p.call-to-action {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 25%;
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 37.5%; }
+  /* line 122, ../scss/page-templates/_benefits-navigator-landing-page.scss */
+  .benefits-navigator-landing .row.row-content .main fieldset.benefit-survey-doors p.call-to-action .button-1 {
+    margin-top: 30px;
+    margin-bottom: 20px; }
+
+/* === benefits-navigator-landing-page.scss  === */
