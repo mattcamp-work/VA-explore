@@ -1,0 +1,157 @@
+
+/* ====== BEGIN @Benfits-Navigator =======*/
+
+.benefit-navigator {
+
+
+
+.row-survey, #survey {
+	.main {
+		max-width:54.5em;
+	}
+
+		.wrapper {
+			//@extend .threeQuarters-width;
+			//margin-left:12.5%;
+			margin-top:20px;
+			background: white;
+			border:1px solid $color-va-med-grey;
+			overflow: hidden;
+			//@include border-radius(4px);
+
+			.inset {
+				overflow: hidden;
+				padding:20px 10% 20px 10%;
+			}
+
+			
+
+			h4 {
+				margin-top:0px;
+				margin-bottom: 15px;
+				line-height: 1.22em;
+				font-size: em-calc(20px);
+				@include myriad-pro-regular;
+
+			}
+
+			.question-wrapper {
+				margin-bottom:60px;
+			}
+			
+
+			h5.path-title {
+				margin-top: 0px;
+				text-align: center;
+			}
+
+			p.question-id {
+				color: mix(white,$color-font,20%);
+			}
+			p.prompt {
+				color:$color-va-blue;
+
+				border-bottom: 1px solid silver;
+				padding-bottom:25px;
+				margin-bottom:35px;
+				padding-left: 20px;
+				padding-right: 20px;
+				//display: none;
+
+			}
+
+			label {
+				clear:right;
+			}
+			legend {
+				display: none;
+			}
+
+			.survey-nav {
+				border-top:1px dotted lighten($color-va-med-grey,10%);
+				//border-top:none;
+				float: left;
+				width: 100%;
+
+				li {
+					&.back,&.save {
+						@include getGridColumn(40,3%);	
+					}
+					&.save {
+						text-align: right;
+					}
+					&.progress {
+						text-align: center;
+						@include getGridColumn(20,1%);
+					}
+
+					padding-top: 10px;
+					padding-bottom: 10px;
+
+				}//.first .last
+			
+
+			}// .survey-nav
+		}//.wrapper
+
+
+	} //.row-survey, .row-banner, .row-benefits-teaser 
+
+	.row-benefits-teaser, .row-banner, #banner {
+	.main {
+		max-width:44.5em;
+		}
+
+		h3 {
+			margin-top: 50px;
+			margin-bottom: 50px;
+			//margin-left:15px;
+		}
+		ul.benefit-teasers {
+			//margin-left: 10%;
+			margin-bottom: 70px;
+			
+			li {
+				padding-left: 80px;
+				background: url(#{$imgDir}sprite-benefit-icons-50w.png) left top no-repeat;
+				margin-bottom: 20px;
+				//padding-top:px;
+				min-height: 60px;
+
+				&.bt-disability {
+					background-position: left -5px;
+				}
+				&.bt-education {
+					background-position: left -125px;
+				}
+				&.bt-employment {
+					background-position: left -250px;
+				}
+				&.bt-health-care {
+					background-position: left -375px;
+				}
+				&.bt-home-loans {
+					background-position: left -500px;
+				}
+				&.bt-life-insurance {
+					background-position: left -625px;
+				}
+				&.bt-memorial-benefits {
+					background-position: left -750px;
+				}
+				&.bt-pensions {
+					background-position: left -870px;
+				}
+				&.bt-dependents {
+					background-position: left -989px;
+				}
+			
+
+			}// li
+		}//ul
+
+	}// row-benefit-teaser
+
+
+} //.benefit-navigator 
+

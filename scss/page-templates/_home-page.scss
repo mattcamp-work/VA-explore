@@ -1,0 +1,153 @@
+
+
+
+
+.row.row-social-portal-callout {
+
+	.call-out {
+
+		width: 50%;
+		margin-left: 25%;
+		margin-top: 4em;
+		margin-bottom: 4em;
+		text-align: center;
+	}
+
+	.vae-button {
+		//float: right;
+	}
+
+	.main {
+		border-top: 1px solid #E7E7E3;
+		background: url(#{$imgDir}social-callout-icons.png) center center no-repeat;
+		background-size: contain
+	}
+}
+
+
+
+ul.icon-grid {
+	text-align: center;
+
+
+	li {
+		list-style-type: none;
+		width:290px;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		@include inline-block;
+		vertical-align: top;
+		//border: 1px solid silver;
+		position: relative;
+		padding-left:0; //120px;
+
+		a {
+			
+			
+			//padding-left: 110px;
+			font-size: em-calc(21px);
+			display: block;
+			text-align: left;
+			vertical-align: middle;
+			//min-height: 120px; 
+
+			span {
+				@include inline-block;
+				vertical-align: middle;
+				width: 60%;
+			}
+
+			i {
+			@include inline-block;
+			background-image: url('#{$imgDir}sprite-benefit-icons-horizontal.png');
+			background-repeat: no-repeat;
+			height: 110px;
+			width: 40%;
+			vertical-align: middle;
+			}
+		
+		}//a
+
+		
+		
+
+		
+		
+		
+		//border: 1px solid silver;
+		//border-color: silver transparent silver transparent;
+
+		$iconOffset : 500px;
+		$vPos :center;
+
+		&[data-benefit='disability-compensation'] i {
+			background-position: 0 $vPos;
+		}
+		&[data-benefit='education-training'] i {
+			background-position: (-(1*$iconOffset)) $vPos;
+		}
+		&[data-benefit='employment-services'] i {
+			background-position: (-(2*$iconOffset)) $vPos;
+		}
+		&[data-benefit='health-care'] i {
+			background-position: (-(3*$iconOffset)) $vPos;
+		}
+		&[data-benefit='home-loans'] i {
+			background-position: (-(4*$iconOffset)) $vPos;
+		}
+		&[data-benefit='life-insurance'] i {
+			background-position: (-(5*$iconOffset)) $vPos;
+		}
+		&[data-benefit='memorial-benefits'] i {
+			background-position: (-(6*$iconOffset)) $vPos;
+		}
+		&[data-benefit='pensions'] i {
+			background-position: (-(7*$iconOffset)) $vPos;
+		}
+		&[data-benefit='spouses-dependents'] i {
+			background-position: (-(8*$iconOffset)) $vPos;
+		}
+
+			div.tool-tip {
+				display: none;
+				position:absolute;
+				top:-110px;
+				left:0px;
+				overflow: visible;
+
+				p {
+					position: relative;
+					background-color:white;
+					font-size: 14px;
+					border-radius: 10px;
+					padding:12px; //padding
+					*border:1px solid silver;
+					text-align: left;
+					-webkit-box-shadow: 0px 2px 14px 0px rgba(50, 50, 50, 0.25);
+					-moz-box-shadow:    0px 2px 14px 0px rgba(50, 50, 50, 0.25);
+					box-shadow:         0px 2px 14px 0px rgba(50, 50, 50, 0.25);
+
+					&:after {
+						display:block;
+						position:absolute;
+						bottom:-30px;
+						left:12%;
+						content:" ";
+						border-style: solid;
+						border-width: 15px;
+						border-color:white transparent transparent transparent;
+					}
+				}
+			}
+
+			&:hover{
+				div.tool-tip {
+					display:block;
+				}
+
+				
+				cursor: pointer;
+			}// ./ :hover
+		}// ./ li
+
+}// ./ ul.grid-benefit-icon

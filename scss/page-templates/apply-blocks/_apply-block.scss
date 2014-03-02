@@ -1,0 +1,161 @@
+
+
+/* == begin @Apply-block === */
+
+ ul.apply-block {
+	text-align: left;	
+	position: relative;	
+	float:left;
+	@extend .full-width;
+	//margin-top: 50px;
+	margin-bottom: 16px;
+	p {
+		font-size: 15.5px;
+	}
+	
+
+	li {
+		list-style-type: none;
+
+		&.or-1, &.or-2, &.or-3 {
+				position: absolute;
+				background: #fff;
+				top:195px;
+				left:33.5%;
+				border-radius:0 50% 50% 0;
+				z-index: 8;
+				height: em-calc(45px);
+				width: em-calc(45px);
+				line-height: em-calc(40px);
+				text-align: center;
+
+			}
+			&.or-2 {
+			background: $color-va-lt-grey;
+			left:64.5%;	
+			*left:65.5%;	
+			}
+
+		&.apply-option {
+			
+			position: relative;
+			list-style-type: none;
+			@include inline-block;
+			padding:0;
+			vertical-align: middle;
+			width:31%;
+			background: $color-va-lt-grey;
+			border:2px solid $color-va-lt-grey2;
+			min-height: 335px;
+			text-align: center;
+			min-width: 220px;
+			}
+
+			&.preferred {
+				background: white;
+				border-color:darken(white, 15%);
+				margin:0px;
+				min-height: 340px;
+				padding-bottom: 50px;
+				width:36%;
+
+				p {
+					text-align: center;
+					margin-top: 15px;
+					width:70%
+
+
+				}
+
+				.vae-button {
+					padding-left:40px;
+					padding-right:40px;
+					margin-top:22px;
+					margin-bottom: 0px;
+
+				}
+
+				h4 {
+					font-size: em-calc(33px);
+				}
+
+
+
+
+
+			}// ./preferred
+
+			&.shadowed-40 {
+				background-image: url(#{$imgDir}shadow-40.png);
+				background-position: -43px top;
+				background-repeat: no-repeat;
+				border-right-color: transparent;
+				//border-left-color: transparent;
+				border-left:0px solid silver;
+				
+
+			}// ./shadowed
+
+			p {
+				width:70%;
+				text-align: left;
+				margin-left:0;
+				zoom:1;
+				margin: 0;
+				@include inline-block;
+				*display: block;
+
+				a {
+						white-space: nowrap;
+						
+
+					}
+				
+			}
+
+			p.grabber {
+				width:100%;
+				position: absolute;
+				background-color: #FDEFCA;
+				bottom:0;
+				left:0;
+				//font-size: em-calc(16px);
+				text-transform: uppercase;
+				letter-spacing: em-calc(6px);
+				line-height: em-calc(36px);
+			}
+
+			a.vae-button {
+				margin:15px 30px;
+				
+			}
+
+			img {
+				clear:both;
+				margin:0;
+			}
+
+				h4 {
+
+				margin:20px 0 20px 0;
+				text-align: center;
+				@include myriad-pro-regular;
+				//background: red;
+				//font-size:em-calc(25px);
+				
+				
+				span {
+					@include myriad-pro-light;
+					//background: yellow;
+					font-size: 16px;
+					letter-spacing: 3px;
+					*line-height: 18px;
+					vertical-align: middle;
+					text-transform: uppercase;
+				}// ./span
+			}// ./h4 
+		
+	}// ./ul
+}// ./apply-block
+
+

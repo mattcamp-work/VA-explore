@@ -1,0 +1,191 @@
+/* ======== begin _footers.scess =================*/
+
+
+/* ===== Begin Main @Footer ====== */
+
+#footer, .row-footer {
+	background-color: $color-va-dk-navy;	
+	border-top:3px solid $color-va-blue;
+	p,a {
+		
+	}
+
+
+	.main {
+		margin-top:30px;
+		margin-bottom:30px;
+		overflow: hidden;
+	
+		
+	}
+
+	h4,h5,h6 {
+		color:mix(white,$color-va-navy,88%);
+		font-weight: 400;
+		
+	}
+
+	h5 {
+		margin-bottom: 25px;
+	}
+
+	h6 {
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+
+	.explore-search {
+		input[type="text"] {
+			@include inline-block;
+			@include border-radius(4px);
+			width:140px;
+			border:none;
+			vertical-align: middle;
+			height: 30px;
+			
+		}
+		.search-button {
+			@include inline-block;
+			background: $color-va-red url(#{$imgDir}sprite-searchGlass.png) center 6px no-repeat;
+			width: 30px;
+			height: 30px;
+			@include border-radius(4px);
+			vertical-align: middle;
+			margin-left: 15px;
+			&:hover {
+				background-color: lighten($color-va-red,10%);
+			}
+
+		}
+	}
+	
+
+	
+	ul.footer-links {
+		@extend .quarter-width;
+		padding: none;
+		//margin: 0 !important;
+	
+		&.with-divider {
+			border-right:1px solid mix(white,$color-va-navy,10%);
+
+		}
+
+		li {
+			list-style-type: none;
+			border: none;
+			margin-bottom: 14px;
+
+			a {
+				@include inline-block;
+
+				&:link,&:active,&:visited {
+					color:mix(white,$color-va-navy,95%);
+				}
+			}
+
+			a.benefit-link {
+				$footerIconOffset : 50px;
+
+				background-image: url('#{$imgDir}sprite-footer-50.png');
+				background-repeat: no-repeat;
+				background-position: -100px 0;
+				padding-left: 30px;
+
+				@include inline-block;
+
+				&:link,&:active,&:visited {
+					color:mix(white,$color-va-navy,95%);
+				}
+
+				&[data-benefit='disability-compensation'] {
+					background-position: 0px 0px;
+				}
+				&[data-benefit='education-training'] {
+					background-position: 0px (-(1*$footerIconOffset));
+				}
+				&[data-benefit='employment-services'] {
+					background-position: 0px (-(2*$footerIconOffset))
+				}
+				&[data-benefit='health-care'] {
+					background-position: 0px (-(3*$footerIconOffset));
+				}
+				&[data-benefit='home-loans'] {
+					background-position: 0px (-(4*$footerIconOffset));
+				}
+				&[data-benefit='life-insurance'] {
+					background-position: 0px (-(5*$footerIconOffset));
+				}
+				&[data-benefit='memorial-benefits'] {
+					background-position: 0px (-(6*$footerIconOffset));
+				}
+				&[data-benefit='pensions'] {
+					background-position: 0px (-(7*$footerIconOffset));
+				}
+				&[data-benefit='spouses-dependents'] {
+					background-position: 0px (-(8*$footerIconOffset));
+				}
+
+				&:hover {
+					color:mix(white,$color-va-navy,100%);
+					background-image: url('#{$imgDir}sprite-footer-100.png');
+
+				}// ./hover
+
+			}// ./a
+		}// ./li
+	}// ./ul
+
+
+
+
+
+}// ./block-footer
+
+
+
+
+.row-va-subfooter {
+	background-color: darken($color-va-dk-navy,2.5%);
+	ul.va-sub-nav {
+		li {
+			min-width: 11.5%;
+			@include inline-block;
+			text-align: center;
+		//	background: rgba(255,255,255,.1);
+			vertical-align: middle;
+
+			&.first {
+				
+				a {
+					//margin-top:10px;
+					height:70px;
+				}
+			}
+
+			a{
+				&:link,&:active,&:visited,&:hover {
+					color:mix(white,#152A46,80%);
+					@include myriad-pro-regular;
+					font-size: em-calc(14px);
+				}
+				&:hover {
+					color:mix(white,#152A46,100%);
+				}
+			}
+
+		}
+	}
+}
+
+
+.row.row-subfooter {
+	background: #151515 url(#{$imgDir}diagonal.png);
+	.main {
+		min-height: 60px;
+	}
+
+}
+
+
+/* ========  END _footers.scess =================*/

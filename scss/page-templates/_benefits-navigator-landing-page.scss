@@ -1,0 +1,140 @@
+/* === Begin benefits-navigator-landing-page.scss ==== */
+
+
+
+.benefits-navigator-landing {
+
+
+	.row.row-banner {
+
+
+		
+		background:#EDEDE4 url(#{$imgDir}image-bnAD-map.png) center bottom no-repeat;
+
+
+		.main {
+			height:190px;
+		}
+
+		.intro {
+			text-align: center;
+			img {
+				margin-top:30px;
+				@include inline-block;
+			}
+		}
+	}
+
+
+
+	.row.row-content {
+		.main {
+			//background-color: rgba(0,0,0,.5);
+			width: 52.5em;
+			text-align: center;
+
+			h3.welcome {
+				margin-top: 38px;
+				margin-bottom: 38px;
+
+			}
+
+			p {
+				text-align: left;
+				//@include inline-block;
+				width: 75%;
+				margin-left:12.5%;
+				margin-bottom: 1.3em;
+			}
+
+			h4.expressive {
+				font-size: 48px;
+				line-height: .5em;
+				margin: 0;
+				margin-top: 35px;
+				margin-bottom: 30px;
+				-webkit-font-smoothing: antialiased;
+			}
+			h5 {
+				font-size: 22px;
+				margin-bottom: 45px;
+			}
+
+
+
+		}
+	}
+
+	.row.row-content {
+		.main {
+
+
+	fieldset.benefit-survey-doors {
+
+
+		input[type="radio"] {
+			position: absolute;
+			left:-9999px;
+		}
+
+
+
+		label {
+			@include getGridColumn(25,1.5%);
+			display: block;
+			//border:1px solid silver;
+			background: url(#{$imgDir}sprite-circle-checkbox.png) center -400px no-repeat;
+			cursor: pointer;
+			//min-width: 180px;
+
+			span {
+				display: block;
+				margin-top: 20px;
+				margin-bottom: 100px;
+				text-align: center;
+				@include myriad-pro-regular;
+				font-size: 16px;
+				line-height: 21px;
+				width: 100%;
+				color:$color-font;
+				//margin-left: 16.5%;
+				//background-color: red;
+
+			}
+
+			&:hover, &.selected {
+
+				background-position:center 97px;
+				cursor: pointer;
+
+			}// hover
+		}//label
+
+		p.call-to-action {
+			margin-top:20px;
+			margin-bottom:20px;
+
+			width: 25%;
+			margin-top:10px;
+			text-align: center;
+			margin-left: 37.5%;
+
+			.button-1  {
+				margin-top: 30px;
+				margin-bottom: 20px;
+			}
+
+			
+		}
+	}//fieldset
+
+} // main
+} // row content
+	
+
+
+}// benefit navigator landing
+
+
+
+/* === benefits-navigator-landing-page.scss  === */

@@ -1,0 +1,213 @@
+
+//====== Notes ========= //
+// this section was a bit squirrely, it has to be constructed
+// in a specific way
+// ===================== //
+
+//===== table of contents ====///
+// 1) banner settings: photos, heights, button placements
+// 2) global banner styles
+// 3) benefit banner styles
+// 4) per-page adjustments 
+//========================== ///
+
+
+
+// ====== 1) banner settings: photos, heights and button placement
+
+
+$bannerHeight:400px;
+$bannerHeightOffset:-20px;
+
+///set images here ///
+$img-hero-home:url('#{$imgDir}photo-hero-eiler.jpg');
+$img-hero-default:url('#{$imgDir}photo-hero-senior-man.jpg');  
+$img-hero-disability:url('#{$imgDir}photo-hero-senior-man.jpg'); 
+$img-hero-education:url('#{$imgDir}photo-hero-senior-man.jpg'); 
+
+
+
+
+// ====== 2) Global Banner settings ===== ///
+
+.row.row-banner {
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.row.row-subnav {
+	background-position: center (0-($bannerHeight+$bannerHeightOffset));
+	background-repeat: no-repeat;
+}
+
+
+.row-banner .intro {
+
+ 	@extend .full-width;
+ 	background-position: center top;
+	background-repeat: no-repeat;	
+
+	
+
+}// intro 
+
+
+body.home-page, body.benefit-page {
+
+	.row.row-banner {
+		height:$bannerHeight+$bannerHeightOffset;
+		.main {
+			overflow: visible;
+		}
+
+	}
+
+	#hero-video, #get-started {
+		position: absolute;
+		top:255px;
+		
+	}
+	#hero-video {
+		left:68%;		
+	}
+	#get-started {
+		left:2%;
+	}
+
+
+
+	.intro {
+
+		h1,h2,h3,h4,h5,p,a {
+		color: white;		
+		text-shadow: 0 0 3px rgba(0,0,0,0.8);
+		//*filter:progid:DXImageTransform.Microsoft.DropShadow(Color='grey',Positive='true');			
+		}
+		h1, h4 {
+		width:60%;
+		}
+		h1 {
+			margin-top:75px;
+			font-size: em-calc(70px);
+		}
+		h4 {
+			margin-top: 20px;
+		}
+
+	}// intro 
+
+
+	
+}// benefit-page 
+
+
+
+
+// 3) benefit banner styles
+
+
+body.home-page {
+
+	
+
+
+	.row-banner{ 
+	background:$img-hero-home center top no-repeat !important;
+	}
+}
+
+
+body.benefit-page.benefit-disability {
+	.row.row-banner {
+		background-image:$img-hero-disability;
+	}
+	.row.row-subnav {
+		background-image:$img-hero-disability;
+	}
+}
+
+
+
+body.benefit-page.benefit-education {
+	.row.row-banner {
+		background-image:$img-hero-default;
+	}
+	.row.row-subnav {
+		background-image:$img-hero-default;
+	}
+}
+
+body.benefit-page.benefit-employment {
+	.row.row-banner {
+		background-image:$img-hero-default;
+	}
+	.row.row-subnav {
+		background-image:$img-hero-default;
+	}
+}
+
+
+body.benefit-page.benefit-health-care {
+	.row.row-banner {
+		background-image:$img-hero-default;
+	}
+	.row.row-subnav {
+		background-image:$img-hero-default;
+	}
+}
+
+body.benefit-page.benefit-home-loans {
+	.row.row-banner {
+		background-image:$img-hero-default;
+	}
+	.row.row-subnav {
+		background-image:$img-hero-default;
+	}
+}
+
+body.benefit-page.benefit-life-insurance {
+	.row.row-banner {
+		background-image:$img-hero-default;
+	}
+	.row.row-subnav {
+		background-image:$img-hero-default;
+	}
+}
+
+
+body.benefit-page.benefit-memorial {
+	.row.row-banner {
+		background-image:$img-hero-default;
+	}
+	.row.row-subnav {
+		background-image:$img-hero-default;
+	}
+}
+
+body.benefit-page.benefit-pensions {
+	.row.row-banner {
+		background-image:$img-hero-default;
+	}
+	.row.row-subnav {
+		background-image:$img-hero-default;
+	}
+}
+
+body.benefit-page.benefit-spouses {
+	.row.row-banner {
+		background-image:$img-hero-default;
+	}
+	.row.row-subnav {
+		background-image:$img-hero-default;
+	}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+
+
+
+
+/* ==== BEGIN benefit-navigator ad block  (bn-ad.scss)=== */
+
+.row.row-ad {
+	background:#E7E7E3 url('#{$imgDir}image-bnAd-map.png') center bottom no-repeat;
+	border-top:10px solid #EFF0EB;
+	
+
+	.main {
+		
+		min-height: 220px;
+			
+		.veteran-photo {
+			@include getGridColumn(24,0%);
+			background: url(#{$imgDir}photo-bnAd-angie.png) left bottom no-repeat;
+			min-height: 220px;
+			background-size: contain;			
+		}
+
+		&.vet-photo-1, &.vet-angie {
+			//background: url(#{$imgDir}photo-bnAd-angie.png) left bottom no-repeat;
+		}
+
+		.call-to-action {
+			margin-top:90px;
+			@include getGridColumn(26,0%);
+
+			.vae-button {
+
+			}			
+
+		}
+			.ad-copy {
+
+			margin-top:65px;
+			@include getGridColumn(50,0%);
+
+			margin-left: 0;
+
+
+			h2 {
+			font-size: em-calc(40px);
+			color:lighten($color-font,15%);
+			}
+			h5 {
+			margin-top:10px;
+			}
+
+
+			
+		}
+	}
+
+
+	body.home-page &, body.page-template &, a.bn-advert-button {
+				@extend .vae-button.button-1;
+				@extend .vae-button.large;
+			}
+
+	body.benefit-page & a.bn-advert-button {
+				@extend .vae-button.button-2;
+				@extend .vae-button.large;
+			}
+
+
+}
+
+	
+/* === end benefit-navigator ad block  (bn-ad.scss) === */

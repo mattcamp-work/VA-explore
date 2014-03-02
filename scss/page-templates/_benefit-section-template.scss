@@ -1,0 +1,368 @@
+
+/* ==== BEGIN benefit-template ====  */
+
+
+body.benefit-page {
+
+@import "apply-blocks/_apply-block.scss";
+@import "apply-blocks/_apply-block_education.scss";
+@import "apply-blocks/_apply-block_home-loans.scss";
+@import "apply-blocks/_apply-block_employment.scss";
+@import "apply-blocks/_apply-block_pensions.scss";
+@import "apply-blocks/_apply-block_health-care.scss";
+
+
+	.row-content {
+
+		.col-sidebar {
+			padding-top: 95px;
+			padding-bottom: 30px;
+		}
+
+		h3 {
+			margin-top: 25px;
+			margin-bottom: 36px;
+			//width:100%;
+			//display: block;
+			//float:left;
+
+		}//h3
+
+		p {
+			margin-bottom: 1em;
+			//float:left;
+			//width: 100%;
+			clear:both;
+		}
+
+
+
+		.gutter {
+			padding:20px;
+		}
+
+			h3.resources-header {
+				background: url(#{$imgDir}sprite-resource-header.png) left center no-repeat;
+				padding-left: 38px;
+				margin-bottom: .3em;
+			}
+	
+
+			h5.resources-header {
+				font-size: 16px;
+				white-space: nowrap;
+				@include myriad-pro-regular();
+			
+				span {
+					@include inline-block;
+					border-bottom: 1px solid mix($color-bg,silver,25%);
+					width:100%;
+					margin-left: 5px;
+					height: 1px;
+					vertical-align: middle;
+				}
+			}
+
+		
+		
+			ul.requirements {
+				float:left;
+				width: 100%;
+				clear:both;
+			
+				li {
+
+					@extend .full-width;
+					@include inline-block;
+					
+					background: url(#{$imgDir}icon-check-circle.png) left 3px no-repeat;
+
+					ul {
+						list-style-type: disc;
+						list-style-position: outside;
+						margin-top: -.5em;
+						margin-left: 2em;
+						padding-left:0;
+								
+								li {
+									display: list-item;
+									background: none;
+									//border:1px solid silver;
+									padding:0;
+									margin-left: 25px;
+									p {
+										margin-bottom: .65em;
+										margin-left: 0;
+
+									}
+								}
+							}
+
+
+
+					p {
+						margin-left:40px;
+						margin-right:40px;
+					}// p
+				}// li
+			}// ul.requirements
+
+			
+
+			//===== END requirements block =======//
+			//===== BEGIN resources block =======//
+
+			.explore-link-wrap {
+				float: left;
+				width: 100%;
+				margin-top: 1.5em;
+				margin-bottom: 1.5em;
+				//border-top:1px solid $color-va-lt-grey;
+				//text-align: center;
+			}
+
+			ul.resources {
+				clear:both;
+				float:left;
+				width:100%;
+				//@extend .quarter-width;
+
+
+
+				//border-top:1px solid silver;
+				
+				li {
+
+					margin-left:3%;
+
+					span {
+						display: block;
+						max-width: 48%;
+						vertical-align: top;
+						margin-left:2%;
+						float:right;
+						text-indent: -.7em;
+						color:lighten($color-font,18%);
+						line-height: 1.3em;
+
+						&:before {
+							content:"\2013 \0020";
+
+						}
+
+					}
+					
+					margin-bottom: 15px;
+					a {
+						@include inline-block;
+						padding-right:20px;
+						background: url(#{$imgDir}sprite-resources.png);
+						background-repeat:no-repeat;
+						background-position: right top;
+						color:$color-va-blue;
+						width: auto;
+						//margin-left: 15px;	
+						
+						&:link,&:active,&:visited {
+						text-decoration: underline;	
+						}		
+
+						
+					}//a
+
+					ul li {
+						background: none;
+					}
+
+					
+					
+
+
+				}//li
+			}//ul.resources
+
+			ul.file-downloads li a {
+				background-position-y:0px;
+			}
+
+			ul.locations {
+				 li a {
+					background-position-y:-50px;
+						&.va-regional-offices {
+						padding-top:115px;
+						background:url(#{$imgDir}bg-location-link.png) center top no-repeat;
+						width: 100%;
+						}
+				}// li a 
+			}//ul
+		
+
+				ul.outbound-links li a {
+				background-position-y:-100px;
+				padding-right:15px;
+			}
+
+			ul.phone-numbers li a {
+				background-position-y:-200px;
+			}
+
+			ul.fax-numbers li a {
+				background-position-y:-250px;
+			}
+
+			ul.chat-support li a {
+				background-position-y:-150px;
+			}
+			ul.how-tos li a {
+				background-position-y:-300px;
+			}
+
+
+			//===== end resources block =======//
+
+			.application-process {
+				@extend .full-width;
+			}
+
+
+
+		
+
+		
+
+	}// .row-content
+
+
+
+
+
+
+}// .benefit-page
+
+
+body.benefit-page .row-content .col-sidebar {
+
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== begin testimonial ===== */
+.testimonial {
+
+	@include border-radius(4px);
+	overflow: hidden;
+	
+	h3 {
+		text-indent: -9999px;
+	}
+
+	p {
+		margin-left:20px;
+		margin-right:20px;
+	}
+
+	p.caption {		
+		margin-bottom: 20px;
+	}
+
+	#content & p.attribution {
+		text-align: right;
+		line-height: em-calc(22px);
+	}
+	
+	.inset {
+		//margin:10px 10px;
+		border:1px solid $color-va-med-grey;
+		overflow: hidden;
+		background-color: white;
+		min-width: 275px;
+		@include border-radius(4px);
+		display: block;
+
+	}
+
+	.gutter {
+		padding:20px;
+		overflow: hidden;
+		width:auto;
+	}
+
+	a.video-testimonial {
+		margin-bottom: 20px;
+		@include inline-block;
+	}
+
+
+}// .testimonial
+
+
+/* ====== end testimonial ===== */
+
+
+
+
+
+
+
+
+
+
+/* === begin @apply-secondary ==== */
+
+.apply-secondary {
+	@extend .full-width;
+	margin-top:60px;
+	margin-bottom:20px;
+
+
+	.decoration {
+		@include getGridColumn(38,2%);
+		border-bottom:2px solid lighten($color-font,55%);
+		height:1px;
+		@include inline-block;
+		margin-top: 20px;
+		
+		
+	}
+
+	.call-to-action {
+		@include getGridColumn(23.9,2%);
+		@include inline-block;
+		
+		text-align: center;
+
+		a.vae-button {
+			margin-bottom:15px;
+		}
+	}
+
+
+}
+
+
+/* === end apply secondary ==== */
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* == this is the new, refactored css === */
+
+//import global settings
+@import 'global-settings/_01-reset.scss';
+@import 'global-settings/_03-foundation-mixins.scss';
+@import 'global-settings/_04-custom-mixins.scss';
+@import 'global-settings/_05-settings.scss';
+@import 'global-settings/_02-grid.scss';
+@import 'global-settings/_06-typography.scss';
+
+//import global modules
+@import 'global-modules/_top-bar.scss'; 
+@import 'global-modules/_nav-va.scss'; // va mega menu 
+@import 'global-modules/_nav-explore.scss'; // explore mega menu
+@import 'global-modules/_banner.scss';
+@import 'global-modules/_subnav.scss';
+@import 'global-modules/_bn-ad.scss';
+@import 'global-modules/_app-process-widget.scss';
+@import 'global-modules/_buttons-and-forms.scss';
+@import 'global-modules/_modals.scss';
+@import 'global-modules/_footers.scss';
+
+
+#content {
+	padding-bottom: 60px;
+}
+
+
+.content-box.testimonial {
+}
+
+.content-box.application-process {
+	@extend .full-width;
+}
+
+.col-sidebar {
+	transition:max-height .66s ease;
+	-webkit-transition: max-height .66s ease;
+	max-height: 1500px;
+	position: relative;
+
+	a.show-more {
+	position: absolute;
+	left:0;
+	bottom:0px;
+	background:url(#{$imgDir}bg-more-resources.png) center bottom repeat-x; //$color-bg;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding:8px 0;
+	text-transform: uppercase;
+		&:hover {
+			text-decoration: none;
+		}
+
+	}
+
+	&.show-part {
+		max-height: 650px;
+
+	}
+}
+
+span.flippy-triangle {
+display: inline-block;
+width:15px;
+text-align: left;
+}
+
+
+
+.bump-left {
+	margin-left:15%;
+}
+
+.z-index-fix {
+	*z-index: 10;
+	//*background: red;
+	//*border:10px solid red;
+} 
+
+
+
+
+
+
+//import page templates
+@import 'page-templates/_home-page.scss';
+@import 'page-templates/_benefit-section-template.scss';
+@import 'page-templates/_share-portal.scss';
+@import 'page-templates/_video-page.scss';
+@import 'page-templates/_generic-page.scss';
+@import 'page-templates/_benefits-navigator.scss';
+@import 'page-templates/_benefits-navigator-landing-page.scss';
+
+
+

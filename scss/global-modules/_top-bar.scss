@@ -1,0 +1,133 @@
+
+/* === BEGIN @top-bar  ====== */
+
+a.branding.va-logo {
+	background:url(#{$imgDir}logo-va.png) 0 center no-repeat;
+	width: 149px;
+	display: block;
+	text-indent: -9999px;
+}
+
+
+.row-top-bar {
+	background: $color-va-dk-navy url(#{$imgDir}shadow-va-meganav.png) center 55px repeat-x;
+	position: relative;
+
+	ul.nav-top-bar {
+		a {
+			line-height: 58px;
+			&:link, &:active, &:visited, &:hover, & {
+					color:mix(white,$color-va-dk-navy,75%);
+				}
+				&:hover {
+					color:white;
+				}
+				&.va-menu-trigger:hover {
+					text-decoration: none;
+				}
+			}
+
+		li {
+			&.nav-item {
+				margin-right: 15px;
+				//background-color: red;
+			}
+		}		
+	}
+
+	
+
+
+	ul.nav-va {
+		width: auto;
+		max-width: 650px;		
+		overflow: hidden;
+		margin-right: 140px;	
+	
+		li {
+
+			//background-color: rgba(0,100,250,.75);
+		
+			&.nav-item {				
+				float: left;
+				display: block;
+			}
+			&.nav-va-search {
+				max-width:100%;								
+				float:none;
+				padding-top: 10px;			
+				overflow: hidden;
+
+			}
+		}
+
+	
+		
+	}// ul 
+
+	ul.nav-user {		
+		float:right;
+		overflow: hidden;
+		//display: block;
+		li {
+			@include inline-block;
+			//background-color: yellow;
+			a {
+				
+				}
+		}//li 
+
+	}//ul
+
+
+}// ./ row-top-bar
+
+
+
+
+
+
+.main {
+			overflow: visible;
+		}
+
+
+
+
+
+
+
+
+
+
+		
+
+	
+
+
+
+	input[type='text'].va-search {
+		width: 100%;
+		padding-left:10px;
+		padding-right:1.3em;
+		font-size: 16px;
+		line-height: 30px;
+		display: inline-block;
+		border:none;//1px solid mix(white,#002E4C,20%);;
+		background: mix(white,#002E4C,10%) url(#{$imgDir}sprite-searchGlass.png) 98% -95px no-repeat;		
+		color: mix(white,#002E4C,66%);
+		transition:background-color .15s linear;
+		border:1px solid $color-va-dk-navy;
+		$va-search-color-hiLight:mix($color-va-dk-navy, white,85%);
+		$va-search-color-lowLight:transparent;//mix($color-va-dk-navy, black,10%);
+		border-color: $va-search-color-lowLight $va-search-color-hiLight $va-search-color-hiLight $va-search-color-lowLight;
+		
+
+			&:focus {
+				background-color: mix(white,#002E4C,90%);
+				color: mix(white,#002E4C,5%);
+				background-position: 98% -195px;
+			}
+		}
+
+/* === end @top-bar  ====== */

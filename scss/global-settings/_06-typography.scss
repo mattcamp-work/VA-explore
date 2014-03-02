@@ -1,0 +1,235 @@
+
+// we use mixins to set the fonts because ie is so finicky 
+
+
+@mixin myriad-pro-light {
+	font-family: "myriad-pro-n3","myriad-pro",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+
+
+@mixin myriad-pro-regular {
+	font-family: "myriad-pro-n4","myriad-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin myriad-pro-semibold {
+
+	font-family: "myriad-pro-n6","myriad-pro",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+@mixin myriad-condensed-light {
+	font-family: "myriad-pro-condensed-n3","myriad-pro-condensed",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+
+h1,h2,h3,h4,h5,h6,p,li,a {
+		//font-weight: normal;
+		@include myriad-pro-light;
+		color:$color-font;
+		//*line-height: 1.3em;
+		-webkit-font-smoothing: subpixel-antialiased;//antialiased;
+		word-wrap: break-word; /* or "normal" */
+    	overflow-wrap: break-word;
+}
+
+a {
+	&:link,&:active,&:visited,&:hover {
+		text-decoration: none;
+	}
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+
+
+blockquote {
+
+	margin-left:0;
+	padding:0;
+	position: relative;
+	font-family: georgia;
+
+	h6 {
+		font-family: georgia;
+		color:$color-va-blue;
+	}
+
+	
+	p {
+
+	font-family: georgia;
+	font-style: italic;
+	//font-size: em-calc(30px);
+	color:$color-va-blue;
+	width: 100%;
+	
+	}
+
+	/*
+	&:before {
+		position: absolute;
+		content:'\201c';
+		color: $color-va-med-grey;
+		font-size: 300%;
+
+		//position: 
+	}
+	&:after {
+		position: absolute;
+		content:'\201d';
+		color: $color-va-med-grey;
+	}
+
+	*/
+	
+	
+}// blockquote
+
+h1,h2,h3,h4,h5,h6,p {
+	/*float:left;
+	width: 100%;
+	*float: none;
+	*width: auto;
+	&:after{
+		content: ".";
+	    display: block;
+	    height: 0;
+	    clear: both;
+	    visibility: hidden;
+	}*/
+
+	text-rendering: optimizelegibility;
+
+}
+
+
+h1 {
+font-size: em-calc(60px);
+-webkit-font-smoothing: antialiased;
+letter-spacing: -1.5px;
+}
+
+h2 {
+font-size: em-calc(42px);
+}
+
+h3 {
+font-size: em-calc(30px);
+}
+
+h4 {
+font-size: em-calc(26px);
+}
+
+h5 {
+font-size: em-calc(19px);
+margin-bottom: ((19px/.57)/2);
+}
+
+h6 {
+font-size: em-calc(17.5px);
+margin-top: ((17.5px/.57)/2);
+}
+
+p {
+font-size: em-calc(16.5px);
+line-height: em-calc(26px);
+max-width: 850px;
+}
+
+
+
+.row.row-banner {
+	
+	.intro {
+		 h3,h4,h5,h6 {
+			margin-top:1em;
+			margin-bottom:1em;
+		} 
+	}
+}
+
+
+
+
+.row.row-content {
+	h1,h2,h3,h4,h5,h6 {
+		margin-top:1em;
+		margin-bottom:1em;
+		width:100%;
+		float: left;
+		line-height: 1.3em;
+	}// headlines
+
+	p {
+		line-height: em-calc(26px);
+
+		a {
+			text-decoration: underline;
+			color:black;
+		}
+	}// p 
+
+	ol.numbered-list {
+		list-style-type: decimal;
+		list-style-position: outside;
+		margin-left:1em;
+		margin-bottom:1em;
+
+		li {
+			margin-bottom:.5em;
+			//@include myriad-pro-regular;
+			a {
+				//@include myriad-pro-regular;
+				text-decoration: underline;	
+			}
+		}
+	}// numbered lists
+
+
+
+	ul.bullet-list {
+		list-style-type: disc;
+		list-style-position: outside;
+		margin-bottom:1em;
+		margin-left:1em;
+
+		li {
+			margin-bottom: .5em;
+			display: list-item;
+			//@include myriad-pro-regular;
+			a {
+			//	@include myriad-pro-regular;
+				text-decoration: underline;	
+			}
+		}// lli
+
+	}// bullet-lists 
+}// .row.row-content 
+
+
+
+
+
+
+b, strong {
+	@include myriad-pro-regular;
+}
+
+.small-text {
+	font-size: em-calc(13.5px);
+	color:lighten($color-font,10%);
+	line-height: em-calc(18px);
+	margin-top:7px;
+	margin-left:5px;
+}

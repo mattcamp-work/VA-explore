@@ -1,0 +1,698 @@
+/* begin _nav-va.scss */
+
+
+
+$color-0:blue;
+$color-1:white;
+$color-2:purple;
+$color-3:mix(#fff,$color-va-navy,90%);//mix(#fff,$color-va-navy,85%); //??????
+$color-4:white;//mix(#fff,$color-va-navy,85%);/*#0f4f89;*/ // section head color
+$color-5:mix(#fff,$color-va-navy,90%);//#003f72; // main nav color
+$color-lt-navy:lighten($color-va-navy,2.5%);
+
+$va-nav-imgs:"../images/va-nav-images/";
+
+
+
+.va-mega-menu {
+	max-height: 0px;
+	overflow: hidden;
+	
+	@include transition(max-height,.3s,cubic-bezier(0.00,0.00,0.48,1.00));
+	
+	&.show-nav {
+		max-height:50px;		
+	}
+	
+	#topnav {
+	 #hdr-flag, #nav-home {
+		display: none;
+		}
+		 
+	}
+
+			.mc_extend_1 {
+				display: block;
+				min-height: 52px;
+				//font: 13px bold Arial, Helvetica, sans-serif $color-5;
+				color:$color-5;
+				text-decoration: none;
+			}
+			.mc_extend_2 {
+				//font-weight: bold;
+				color: $color_5;
+				text-decoration: none;
+			}
+
+
+			.element-hidden { left: -9999px; position: absolute; z-index: 10;}
+
+			.element-viisble { left: auto;}
+
+			.clear { clear: both;}
+
+			.clearfix:after { clear: both; content: "."; display: block; height: 0; line-height: 0; visibility: hidden;}
+
+			.clearfix { display: inline-block; }
+
+			html[xmlns] .clearfix { display: block;}
+
+			* .clearfix {height: 1%;}
+
+			* {margin: 0; padding: 0;}
+
+			#site-title {//mcfont font-size: 2.3em;
+			}
+			h2.page-title { margin-top:-7px;}
+			/* End The Clear Fixes & Misc Styles*/
+
+			.bg-1 {
+				background-color:red;
+			}
+			.bg-2 {
+				background-color:orange;
+			}
+			.bg-3 {
+				background-color:yellow;
+			}
+			.bg-4 {
+				background-color:green;
+			}
+			.bg-5 {
+				background-color:blue;
+			}
+
+
+			h4 {
+				font-size: em-calc(15px);
+				@include myriad-pro-regular;
+			}
+
+			a {
+				font-size: em-calc(14px);
+				//padding-left: 10px;	
+				
+				&:link,&:active,&:hover,&:visited {
+					color:$color-3;
+				}
+			}
+
+
+			/* === mc background hack ===== */
+
+			ul div {
+				background-color: lighten($color-va-navy,2.5%);
+					div {
+						background-color: transparent;
+					}
+				}
+
+			/* === end mc background hack ===== */
+
+				
+			ul {
+				&.secondary-nav {
+					li {
+						list-style-type: none;
+						//mcfont  font: normal small-caps normal 11px/90% Arial, Helvetica, sans-serif;
+						color: $color-0;
+						display: inline;
+
+						a {
+							list-style-type: none;
+							//mcfont  font: normal small-caps normal 11px/90% Arial, Helvetica, sans-serif;
+							color: $color-0;
+							display: inline;
+						}
+					}
+					a:hover {
+						//mcfont  font: normal small-caps normal 11px/90% Arial, Helvetica, sans-serif;
+						color: $color-0;
+					}
+				}
+
+
+				.topnav-dd-outer {
+					margin-top: -5px;
+					//background: red;
+				}
+
+				#nav-issues div {
+					&.topnav-dd-outer-three-col {
+					//mcbg	background: url(#{$va-nav-imgs}bg-nav-left-edge-blank.png) no-repeat scroll left bottom transparent;
+						margin-left: -299px;
+					}
+					&.topnav-dd-outer-featured {
+					//mcbg	background: url(#{$va-nav-imgs}bg-nav-left-edge-blank.png) no-repeat scroll left bottom transparent;
+						margin-left: -299px;
+					}
+					&.topnav-dd-outer-three-col-featured {
+					//mcbg	background: url(#{$va-nav-imgs}bg-nav-left-edge-blank.png) no-repeat scroll left bottom transparent;
+						margin-left: -299px;
+					}
+				}
+				#nav-briefing-room div {
+					&.topnav-dd-outer-three-col-featured {
+					//mcbg	background: url(#{$va-nav-imgs}bg-nav-left-edge-blank.png) no-repeat scroll left bottom transparent;
+						margin-left: -243px;
+					}
+				}
+				#nav-the-admin div {
+					&.topnav-dd-outer {
+						margin-left: -198px;
+					}
+					&.topnav-dd-outer-featured {
+						margin-left: -197px;
+					}
+					&.topnav-dd-outer-three-col-featured {
+						margin-left: -420px;
+					}
+					&.topnav-dd-inner {
+					//mcbg	background: url(#{$va-nav-imgs}bg-nav-right-edge-trans2.png) no-repeat scroll left bottom transparent;
+						margin-right: 9px;
+					}
+				}
+				#nav-the-wh div {
+					&.topnav-dd-outer {
+						margin-left: -132px;
+					}
+					&.topnav-dd-outer-featured {
+						margin-left: -7px;
+					}
+					&.topnav-dd-outer-three-col {
+						margin-left: -322px;
+					}
+					&.topnav-dd-outer-three-col-featured {
+						margin-left: -547px;
+					}
+					&.topnav-dd-inner {
+					//mcbg	background: url(#{$va-nav-imgs}bg-nav-right-edge-trans2.png) no-repeat scroll left bottom transparent;
+						margin-right: 9px;
+					}
+				}
+				#nav-the-gov div {
+					&.topnav-dd-outer {
+						margin-left: -68px;
+					}
+					&.topnav-dd-outer-featured {
+						margin-left: -496px;
+					}
+					&.topnav-dd-inner {
+					//mcbg	background: url(#{$va-nav-imgs}bg-nav-right-edge-trans2.png) no-repeat scroll left bottom transparent;
+						margin-right: 9px;
+					}
+				}
+			}
+			#hp-content-main {
+				height: 100%;
+				width: 960px;
+				float: left;
+				background-color: $color-0;
+			}
+			#hp-three-col {
+				height: 380px;
+				width: 960px;
+				float: left;
+
+				//mcbg background:url(#{$va-nav-imgs}bg-hp-three-col.jpg) no-repeat 0 0;
+
+				.col {
+					width: 320px;
+					height: 383px;
+					float: left;
+
+				}
+				.titles {
+					height: 57px;
+					width: 300px;
+					margin: 33px 0 0 20px;
+					float: left;
+					h1 {
+						color: $color-1;
+						//mcfont  font: 25px Georgia, "Times New Roman", Times, serif;
+						margin: 10px 0 0 0;
+						/* (4) color was set before: old value: $color-1 - new value $color-1 */;
+						/* (5) //mcfont  font was set before: old value: 25px Georgia,"Times New Roman",Times,serif - new value 25px Georgia, "Times New Roman", Times, serif */;
+						/* (6) margin was set before: old value: 10px 0 0 3px - new value 10px 0 0 0 */;
+						a {
+							color: $color-1;
+							text-decoration: none;
+						}
+					}
+				}
+				.icons {
+					height: 57px;
+					width: 49px;
+					float: left;
+				}
+				p {
+					color: $color-2;
+					margin: 0 10px 10px 30px;
+				}
+				ul.custom {
+					li {
+						height: 22px;
+						width: 270px;
+						float: left;
+						//mcfont  font: 12px Arial, Helvetica, sans-serif;
+						color: $color-1;
+						a:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+				.bullet a {
+					color: $color-1;
+				}
+			}
+			.three-col-content {
+				float: left;
+				height: 100px;
+				width: 320px;
+
+				/* (1) float was set before: old value: left - new value left */;
+				/* (2) height was set before: old value: 120px - new value 100px */;
+				/* (3) width was set before: old value: 320px - new value 320px */;
+			}
+			a {
+				&:visited {
+					color: $color-1;
+				}
+				&:link a {
+					&:visited {
+						color: $color-1;
+						text-decoration: none;
+						@extend .mc_extend_2;
+					}
+				}
+			}
+			.hp-button-wrapper {
+				height: 30px;
+				width: 250px;
+				margin: 10px 0 0 25px;
+			}
+			.button-getting-started {
+			//mcbg	background: url(#{$va-nav-imgs}button-getting-started.png) no-repeat 0 0;
+				float: left;
+				height: 34px;
+				width: 129px;
+				margin-top: 10px;
+				.text a {
+					//mcfont  font: "Times New Roman", Times, serif;
+					color: $color-2;
+					text-decoration: none;
+					height: 15px;
+					width: 129px;
+					text-align: center;
+					float: left;
+					margin-top: 10px;
+				}
+			}
+			.hp-icons {
+				height: 49px;
+				width: 57px;
+				float: left;
+			}
+			#swoosh {
+			//mcbg	background: url(#{$va-nav-imgs}admin-swoosh2.png) no-repeat 0 0 transparent;
+				position: relative;
+				z-index: 8;
+				float: left;
+				height: 56px;
+				width: 740px;
+				margin-top: -27px;
+			}
+			#hdr-emblem {
+				float: left;
+				height: 62px;
+				margin: 10px 0 0;
+				width: 116px;
+				img {
+					height: 60px;
+					width: 120px;
+				}
+			}
+			#hdr-links {
+				float: right;
+				height: 23px;
+				margin: 33px 8px 0 0;
+				padding: 15px 0 0;
+				text-align: right;
+				width: 270px;
+				a {
+					padding: 0 10px;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+				ul {
+					margin: 0;
+					padding: 0;
+				}
+				li {
+					display: inline;
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					&.line {
+						border-left: 1px solid $color-3;
+					}
+				}
+			}
+			#hdr-flag {
+				float: left;
+				height: 24px;
+				width: 25px;
+				margin: 18px 0 0 11px;
+				padding: 0;
+				text-indent: -9000px;
+				a {
+					background-position: -68px -69px;
+					display: block;
+					width: 25px;
+					height: 24px;
+				//mcbg	background: url(#{$va-nav-imgs}universal-home.png) no-repeat scroll 0 0 transparent;
+				}
+			}
+			#top-nav-wrapper {
+				width: 960px;
+			}
+			#topnav {
+			//mcbg	background: url(#{$va-nav-imgs}bg-main-nav.jpg) repeat-x scroll 0 0 transparent;
+				height: 52px;
+				width: 960px;
+				margin: auto;
+				float: left;
+				padding: 0;
+
+
+				li {
+
+
+					margin-top: 0;
+					@extend .mc_extend_1;
+					float: left;
+					list-style: none outside none;
+					padding: 0;
+					&.first-level {
+						//position: relative;
+
+						span {
+						//mcbg	background: url(#{$va-nav-imgs}bg-nav-main-seperators.png) no-repeat scroll 0 0 transparent;
+							margin-top: 0;
+							margin-left: -2px;
+							margin-right: auto;
+							display: block;
+
+
+							//height: 52px;
+							&.text {
+								float: left;
+								margin-top: 20px;
+								background: none;
+								display: block;
+								width: 130px;
+								text-align: center;
+								color: $color-1;
+								text-decoration: none;
+							}
+							&.highlight {
+								float: left;
+								margin-top: 20px;
+								background: none;
+								display: block;
+								width: 130px;
+								text-align: center;
+								@extend .mc_extend_2;
+								position: relative;
+
+								
+							}//highlight
+						}
+						a {
+							@extend .mc_extend_1;
+						}
+						ul {
+							display: block;
+							float: left;
+							margin: 0 0 0 0;
+							padding: 20px 0 5px;
+							width: 195px;
+							li {
+								float: left;
+								margin: 0 0 13px;
+								min-height: 12px;
+								padding: 0;
+								width: 180px;
+								a {
+									//color: $color-4;
+									//mcfont  font: bold 12px arial;
+									min-height: 12px;
+									text-decoration: none;
+									&:hover {
+										text-decoration: underline;
+									}
+								}
+							}
+							&.topnav-dd-inner-sub {
+								margin: 0 0 15px 0;
+								padding: 0;
+								li {
+									margin: 7px 0 0 0;
+									a {
+										//mcfont  font-weight: normal;
+									}
+									span.text-italic {
+										background: none;
+										text-decoration: underline;
+										//mcfont  font-style: italic;
+										display: inline;
+										position: relative;
+										margin-top: -10px;
+										margin-left: 1px;
+										margin-right: 1px;
+									}
+								}
+							}
+							&.two-col li {
+								a {
+									//mcfont  font-weight: normal;
+								}
+							}
+							&.three-col li {
+								a {
+									//mcfont  font-weight: normal;
+								}
+							}
+						}
+					}
+					div {
+						&.topnav-dd-outer {
+						//	background: url(#{$va-nav-imgs}bg-nav-left-edge-trans.png) no-repeat scroll left bottom transparent;
+							left: -999em;
+							margin-left: -9px;
+							position: absolute;
+							width: 426px;
+							z-index: 500;
+							//background-image: url(#{$va-nav-imgs}bg-nav-left-edge-trans.png);
+						}
+						&.topnav-dd-outer-featured {
+							width: 651px;
+						}
+						&.topnav-dd-outer-three-col {
+							width: 616px;
+						}
+						&.topnav-dd-outer-three-col-featured {
+							width: 841px;
+						}
+					}
+					&:hover div {
+						&.topnav-dd-outer {
+							left: auto;
+						}
+					}
+				}
+				#nav-the-admin-feature {
+				//mcbg	background: url(#{$va-nav-imgs}bg-nav-featured-left.png) no-repeat scroll right top transparent;
+					padding: 18px 40px 18px 10px;
+				}
+				#nav-the-wh-feature {
+				//mcbg	background: url(#{$va-nav-imgs}bg-nav-featured-left.png) no-repeat scroll right top transparent;
+					padding: 18px 40px 18px 10px;
+				}
+				#nav-the-gov-feature {
+				//mcbg	background: url(#{$va-nav-imgs}bg-nav-featured-left.png) no-repeat scroll right top transparent;
+					padding: 18px 40px 18px 10px;
+				}
+				div.topnav-feature {
+				//mcbg	background: url(#{$va-nav-imgs}bg-nav-featured-right.png) no-repeat scroll left top transparent;
+					color: $color-2;
+					float: left;
+					//mcfont  font-family: Arial,Helvetica,sans-serif;
+					overflow: hidden;
+					padding: 18px 10px 18px 40px;
+					width: 185px;
+					a {
+						color: $color-4;
+						min-height: 12px;
+					}
+					h3 {
+						//mcfont  font-size: 12px;
+						//mcfont  font-weight: bold;
+						line-height: 16px;
+						margin: 0 0 7px;
+						min-height: 12px;
+						padding: 0;
+					}
+					p {
+						//mcfont  font-size: 12px;
+						line-height: 16px;
+						margin: 0 0 7px;
+						min-height: 12px;
+						padding: 0;
+					}
+					hr {
+						margin: 10px 0;
+					}
+				}
+			}
+			#nav-home {
+				a.first-level {
+					width: 130px;
+				}
+				&:hover a {
+					&.first-level {
+					//mcbg	background: url(#{$va-nav-imgs}homesprite.png) no-repeat scroll 0 -34px transparent;
+					}
+				}
+			}
+			#nav-blog {
+				a.first-level {
+					width: 130px;
+				}
+				&:hover a {
+					&.first-level {
+					//mcbg	background: url(#{$va-nav-imgs}homesprite.png) no-repeat scroll 0 -34px transparent;
+					}
+				}
+			}
+			#nav-media-center {
+				a.first-level {
+					width: 130px;
+				}
+				&:hover a {
+					&.first-level {
+					//mcbg	background: url(#{$va-nav-imgs}homesprite.png) no-repeat scroll -65px -34px transparent;
+					}
+				}
+			}
+			#nav-briefing-room {
+				a.first-level {
+					width: 130px;
+				}
+				&:hover a {
+					&.first-level {
+					//mcbg	background: url(#{$va-nav-imgs}homesprite.png) no-repeat scroll -200px -34px transparent;
+					}
+				}
+			}
+			#nav-issues {
+				a.first-level {
+					width: 130px;
+				}
+				&:hover a {
+					&.first-level {
+					//mcbg	background: url(#{$va-nav-imgs}homesprite.png) no-repeat scroll -250px -34px transparent;
+					}
+				}
+			}
+			#nav-the-admin {
+				width: 130px;
+				a.first-level {
+					width: 130px;
+				}
+				&:hover a {
+					&.first-level {
+					//mcbg	background: url(#{$va-nav-imgs}homesprite.png) no-repeat scroll -497px -34px transparent;
+					}
+				}
+			}
+			#nav-the-wh {
+				a.first-level {
+					width: 130px;
+				}
+				&:hover a {
+					&.first-level {
+					//mcbg	background: url(#{$va-nav-imgs}homesprite.png) no-repeat scroll -656px -34px transparent;
+					}
+				}
+			}
+			#nav-the-gov {
+				a.first-level {
+					width: 130px;
+				}
+				&:hover a {
+					&.first-level {
+					//mcbg	background: url(#{$va-nav-imgs}homesprite.png) no-repeat scroll -756px -34px transparent;
+					}
+				}
+			}
+			#issues-landing-entry-list {
+				float: left;
+				width: 142px;
+			}
+			li.bullet {
+				list-style-type: none;
+			//mcbg	background: url(#{$va-nav-imgs}bullet.png) no-repeat top left;
+				height: 13px;
+				margin-left: 25px;
+				padding-left: 25px;
+			}
+			.two-col h4 {
+				color: $color-4;
+				//mcfont  font-family: Arial,Helvetica,sand-serif;
+				//mcfont  font-size: 0.917em;
+				letter-spacing: 0.05em;
+				//mcfont  font-weight: bold;
+				margin: 3px 0 10px 0;
+				text-transform: uppercase;
+			}
+			.topnav-dd-inner-sub h4 {
+				color: $color-4;
+				//mcfont  font-family: Arial,Helvetica,sand-serif;
+				//mcfont  font-size: 0.917em;
+				letter-spacing: 0.05em;
+				//mcfont  font-weight: bold;
+				margin: 15px 0 10px 0;
+				text-transform: uppercase;
+			}
+			.three-col h4 {
+				color: $color-4;
+				//mcfont  font-family: Arial,Helvetica,sand-serif;
+				//mcfont  font-size: 0.917em;
+				letter-spacing: 0.05em;
+				//mcfont  font-weight: bold;
+				margin: 0 0 10px 0;
+				text-transform: uppercase;
+				text-align: left;
+			}
+			#issues-landing-links #issues-landing-entry-list {
+				li {
+					padding: 3px;
+					width: 139px;
+				}
+			}
+			div.topnav-dd-inner {
+			//mcbg	background: url(#{$va-nav-imgs}bg-nav-right-edge-trans.png) no-repeat scroll right bottom transparent;
+				margin-bottom: -5px;
+				margin-left: 17px;
+				padding: 0 0 17px;
+			}
+
+
+}// va-mega-menu 
+
+
+
+
+/* === end _nav-va.scss === */

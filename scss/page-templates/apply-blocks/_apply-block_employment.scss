@@ -1,0 +1,136 @@
+
+
+/* == begin @Apply-block === */
+
+ &.benefit-employment ul.apply-block {
+	
+	p {
+		font-size: 16px;
+		line-height: 1.4em;
+	}
+	
+
+	li {
+		list-style-type: none;
+		margin-top: 2.6em;
+
+
+		&.apply-employment-resources {
+			//background-color: green;
+			text-align: center;
+			width: 100%;
+			*margin-left:25%;
+			display: inline-block;
+			vertical-align: middle;
+			//background-color: blue;
+
+			.wrapper {
+			width: 47%;
+			//*margin-left: 25%;
+			//background-color: yellow;
+			display: inline-block;
+			vertical-align: middle;
+			text-align: left;
+			padding-bottom: 15px;
+			
+			}
+
+			a.vae-button {
+				display: inline-block;
+				vertical-align: middle;
+				//background-color: violet;
+				float: none;
+				margin: 0;
+			}
+
+
+			&:before, &:after{
+				content: " ";
+				width: 8%;
+				margin-left: 2%;
+				margin-right: 2%;
+				height: 1px;
+				background-color: $color-va-lt-grey2;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			h3 {
+				margin:0;
+				margin-bottom: .15em;
+			}
+			
+
+			p {
+				//text-align: center;
+				//background-color: pink;
+				//width:55%;
+				width: 100%;
+				font-size: em-calc(18px);
+			}
+
+			h3, p {
+				
+			}
+
+			
+		}
+
+		
+		
+
+		&.apply-option {
+			
+			
+			}
+
+			&.preferred {
+				
+
+				p {
+					
+				}
+
+				.vae-button {
+					
+				}
+
+				h4 {
+					
+				}
+
+			}// ./preferred
+
+			
+
+			p {
+				
+				
+			}
+
+			p.grabber {
+				
+			}
+
+			a.vae-button {
+			
+				
+			}
+
+			img {
+				
+			}
+
+				h4 {
+
+				
+				
+				span {
+					
+				}// ./span
+			}// ./h4 
+		
+	}// ./ul
+}// ./apply-block
+
+

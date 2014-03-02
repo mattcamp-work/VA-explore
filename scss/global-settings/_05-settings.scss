@@ -1,0 +1,45 @@
+/* === settings ==== */
+
+// color presets
+
+$color-va-navy: #062F4D;
+$color-va-dk-navy: #002E4C;
+$color-va-blue:#1981B8;
+$color-va-red:#C2202F;
+$color-va-beige:#FDEFCC;
+$color-va-lt-grey:#EBECE8;
+$color-va-lt-grey2:darken($color-va-lt-grey,15%);
+$color-va-med-grey:#BEC2C0;
+$color-va-green:#51782E;
+$color-va-yellow:#F9CE63;
+$color-va-orange:#E88D5E;
+
+$color-fb-blue:#39629C;
+$color-tw-blue:#37A9DD;
+$color-pinterest-red:#C71C2B;
+
+//color routing
+$color-font: #52555F;
+$color-bg:#F7F9F4;
+$color-bg-accent-1:#EBECE8;
+$color-bg-accent-2:#BEC2C0;
+$color-highlight: #C2202F;
+$color-primary: #1981B8;
+$color-accent: #1981B8;
+
+// Global settings 
+
+body {
+  background-color: $color-bg !important;
+  font-size: 16px;  
+}
+
+
+
+$imgDir: "../images/";
+
+
+
+
+
+

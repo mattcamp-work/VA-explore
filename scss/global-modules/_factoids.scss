@@ -1,0 +1,55 @@
+
+
+/* ==== begin did-you-know stuff / factoid modules ==== */
+
+
+.row.row-content {
+	.factoid-module {
+
+		//border-top:10px solid #E2E4DF;
+		//border-bottom:10px solid #E2E4DF;
+		//margin-top: 10px;
+		//padding-bottom: 25px;
+		background: url(#{$imgDir}watermark-dependents.png) center -25px no-repeat;
+		//min-height: 350px;
+
+		h4,h5, p {
+		//color:lighten($color-font,20%);
+		text-align: center;
+		//margin:0;
+		//display: none;
+		}
+		h4 {
+			margin-top: 210px;
+			margin-bottom: .5em;			
+		}
+
+		p {
+			font-size: em-calc(15px);
+			margin-left: 10%;
+			margin-right: 10%;
+			//text-align: left;
+			//display: none;
+		}
+
+		&.short {
+			background-position:-9999px top;
+			h4 {
+			margin-top: 10px;
+			margin-bottom: .5em;			
+			}
+			padding-top:20px;
+			padding-bottom:20px;
+
+			border-top:10px solid #E2E4DF;
+			border-bottom:10px solid #E2E4DF;
+		}// short
+
+	}// factoid module 
+
+	.factoid-education {
+			background-image: url(#{$imgDir}watermark-education.png);
+	}
+
+}
+/* ==== end did-you-know stuff / factoid modules ==== */

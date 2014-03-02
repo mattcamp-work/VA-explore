@@ -1,0 +1,56 @@
+
+
+
+	&.benefit-health-care ul.apply-block {
+
+
+
+
+		li {
+
+			//background-color:rgba(250,50,0,.3);
+
+			&.or-1, &.or-2, &.or-3 {
+				left:25.5%;
+			}
+			&.or-2 {
+				background: $color-va-lt-grey;
+				left:49.0%;	
+				*left:49.5%;	
+			}
+			&.or-3 {
+				background: $color-va-lt-grey;
+				left:72.0%;	
+				*left:72.0%;	
+			}
+
+			&.apply-option {
+
+				width:23%;
+
+			} // apply-option
+
+			&.preferred {
+				width:28%;
+				min-width: 220px;
+				height:360px; //340px;
+				p {
+					width:100%;
+				}
+
+			} // preferred
+
+			&.type-2 {
+				border-right:none;
+			}
+
+			p {
+				//width:75%;
+				line-height: 1.3em;
+				//text-align:center;
+			}
+		}// li 
+	}// ul.apply-block 
+
+
+

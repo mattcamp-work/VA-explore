@@ -1,0 +1,146 @@
+
+
+/* ==== BEGIN @Buttons (_buttons-and-forms.scss) ==== */
+
+
+a.vae-button, input[type="submit"], button, input[type="button"] {
+	@include inline-block;
+	//@include myriad-pro-regular;
+	font-size: em-calc(19px);
+	color: white;	
+	padding:8px 20px;
+	border:1px solid white;
+	@include border-radius(6px);
+	text-decoration: none !important;
+
+	&:hover {
+		background:lighten($color-va-red,5%);
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	&.inline-small, &.inline &.quick-access {
+		font-size: em-calc(16px);
+		padding:5px 18px;
+		border-radius: 1em;
+		line-height: 1em;
+	}
+
+	&.quick-access {
+		padding:5px 10px 5px 15px;
+		@include border-radius(15px);
+		margin-right: 10px;
+		background: lighten($color-va-med-grey,15%);
+		color:$color-font;
+		border-color:lighten($color-va-med-grey,10%);
+		&:hover {
+			background:lighten($color-va-med-grey,10%);
+		}
+
+		span {
+			font-size: 75%;
+			color:mix($color-font,$color-bg,50%);
+			@include inline-block;
+			margin-left: 5px;
+			vertical-align: middle;
+		}
+	}
+
+
+	&.small {
+		font-size: em-calc(16px);
+		padding:5px 18px;
+		border-radius: 1em;
+	}
+
+	&.large {
+		font-size: em-calc(21px);
+		padding:12px 28px;
+	}
+
+	&.variation {
+		&:after {
+			content:"\25b7";
+			padding-left: .8em;
+			padding-right: .8em;
+			font-size: 80%;
+			vertical-align:middle;
+			display: inline-block;
+		}
+		padding-right: 0;
+	}
+
+
+	
+	& strong {
+		padding-right:35px;
+		font-weight: 300;
+		background-image:url('#{$imgDir}button-triangle-white.png');
+		background-position: right 2.5px;
+		*background-position: right 0px;
+		background-repeat: no-repeat;
+
+			&:hover {
+				background-position: right -123px;
+				*background-position: right -125px;
+			}
+		}
+
+	&.button-1 {
+	background: $color-va-red;
+	//border:1px solid white;
+		&:hover {
+		background:lighten($color-va-red,5%);
+
+		}
+	}
+
+	&.button-2 {
+		background: $color-va-blue;
+		&:hover {
+			background:lighten($color-va-blue,5%);
+		}
+	}
+
+	&.button-3 {
+		background-color: lighten($color-va-lt-grey2,10%);
+		color:$color-font !important;
+		//border-color: white $color-va-med-grey $color-va-med-grey white;
+		&:hover {
+			background-color:lighten($color-va-lt-grey2,5%);
+		}		
+	}
+
+	&.explore-link {
+		background-color: transparent;
+		color:$color-font !important;
+		border-color: $color-va-lt-grey2;
+		//background-color:mix($color-bg,$color-va-lt-grey2,80%);
+
+		&:hover {
+			background-color:mix($color-bg,$color-va-lt-grey2,80%);
+			
+		}		
+	}
+
+
+	&.button-video {
+		background-color: transparent;
+		background-image: url(#{$imgDir}sprite-video-play.png);
+		background-position: right 7px;
+		background-repeat: no-repeat;
+		padding-right: 50px;
+		padding-top:13px;
+		padding-bottom:13px;
+	//	color:white;
+		border:none;
+		font-size: em-calc(26px);
+		//overflow: hidden;		
+	}
+
+}
+
+
+
+
+/* ===== END buttons ==== */

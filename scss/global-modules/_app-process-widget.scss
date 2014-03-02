@@ -1,0 +1,74 @@
+/* === begin app-process-widget.scss === */
+
+.row.row-content {
+	ul.application-process {
+
+		width:100%;
+		float:left;
+		white-space: nowrap;
+
+		li {
+
+			@include inline-block;
+			vertical-align: top;
+			margin-right: 15px;
+			border:1px solid $color-va-med-grey;
+			@include border-radius(3px);
+			overflow: hidden;
+
+			white-space: normal;
+
+			.intro-panel {
+				min-height:230px;
+				width:180px;
+				background: white;
+				float:left;
+			}//intro
+
+			p {
+				margin: 0;
+			}
+
+			h4 {
+				text-align: center;
+				color:white;
+				@include myriad-pro-regular;
+				background: #999;
+				margin: 0;
+				padding:15px 0;
+
+				&.orange {
+					background-color: $color-va-orange;
+				}
+				&.yellow {
+					background-color: $color-va-yellow;
+					color: $color-va-red;
+				}
+				&.green {
+					background-color: $color-va-green;
+				}
+				&.blue {
+					background-color: $color-va-blue;
+				}
+			}
+
+			.gutter {
+				padding:0;
+				padding:15px;
+			}
+
+			.more-info {
+				min-height:230px;
+				max-width: 0;
+				float:left;
+				//display: none;
+			}// expand
+		}
+
+
+	}
+}
+
+
+
+/* === end app-process-widget.scss === */

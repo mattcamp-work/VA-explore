@@ -1,0 +1,155 @@
+
+
+.row {
+
+	width:100%;
+	//min-height: 50px;
+	float:left;
+	clear:both;
+	position: relative;	
+}
+
+
+
+.main {
+		//border-left:1px solid silver;
+		//border-right:1px solid silver;
+		max-width: 67.5em;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: hidden;
+		
+}
+
+
+
+/* ==== GRID - ie7 compatible ======== */
+
+
+// STEP 1
+//set margin here (as %)
+$col-margin: 2%;
+
+// STEP 2
+// Look at this cool mixin - don't mess with it
+@mixin getGridColumn($colWidth,$margin) {
+	width:($colWidth - (2*$margin));
+	margin-left:$margin;
+	margin-right:$margin;
+	*margin-right:($margin*.85); // take care of the bad ie sub-pixel rounding
+	padding-left:0;
+	padding-right:0;
+	float:left;
+	position: relative;
+}
+
+
+//@media (min-width: 768px) {
+	.full-width {
+		@include getGridColumn(100,$col-margin);
+		&.alpha {
+			margin-left: 0;
+			margin-right: (2*$col-margin);
+		}		
+	}
+
+	.half-width {
+		@include getGridColumn(50,$col-margin);
+		&.alpha,&.left,&.right {
+			margin-left: 0;
+			margin-right: (2*$col-margin);
+		}
+		&.right {
+			float:right;
+		}
+		
+	}
+
+	.twoThirds-width {
+		@include getGridColumn(66.666,$col-margin);
+		&.alpha {
+			margin-left: 0;
+			margin-right: (2*$col-margin);
+		}
+	}
+
+	.oneThird-width {
+		@include getGridColumn(33.333,$col-margin);
+		
+	}
+
+	.quarter-width {
+		@include getGridColumn(25,$col-margin);
+		
+	}
+
+	.threeQuarters-width {
+		@include getGridColumn(75,$col-margin);
+	}
+
+	.ad-column-20 {
+			@include getGridColumn(20,.5%);	
+	}
+
+	.ad-column-30 {
+			@include getGridColumn(30,.5%);
+	}
+
+	.ad-column-50 {
+			@include getGridColumn(50,.5%);	
+	}
+
+	
+
+	.col-1, .col-2 {
+		@include getGridColumn(50,$col-margin);
+		
+	}
+	.col-1 {		
+		margin-left: 0;
+		margin-right: (2*$col-margin);
+	}
+
+	.col-main {
+		@include getGridColumn(65,$col-margin);
+	}
+
+	.col-sidebar {
+		@include getGridColumn(35,$col-margin);
+		overflow: hidden;
+	}
+	
+
+
+//}
+
+/* ==== gutter div ==== */
+
+
+.gutter {
+	position: relative;
+	padding:20px;
+	float:left;
+	width: 100%;
+	zoom:1;
+	*float:inherit;
+}
+
+
+/* ==== clearing ==== */
+
+
+.clear-me {
+	overflow: auto;
+	width: 100%;
+	*zoom:1;
+	*height:1%;
+}
+
+hr.clear-me {
+	
+		visibility: hidden;
+	}
+
+
